@@ -1,0 +1,132 @@
+.practice-section {
+  background: var(--bg-taupe);
+  padding: 46px 0 34px;
+}
+
+.practice-top {
+  padding: 0 0 28px;
+  color: white;
+}
+
+.practice-top h2 {
+  font-size: 1.85rem;
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 14px;
+  max-width: 470px;
+}
+
+.practice-top p {
+  font-size: 0.96rem;
+  font-weight: 500;
+  max-width: 620px;
+  line-height: 1.6;
+}
+
+.practice-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.practice-arrow {
+  border: none;
+  background: transparent;
+  font-size: 3.7rem;
+  color: white;
+  width: 64px;
+  transition: opacity 0.2s ease;
+}
+
+.practice-arrow:hover {
+  opacity: 0.8;
+}
+
+.practice-slide {
+  position: relative;
+  width: 100%;
+  max-width: 980px;
+  height: 370px;
+  background-image: url("https://via.placeholder.com/1000x520?text=Slide+Image");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.practice-slide-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(40, 30, 20, 0.45);
+}
+
+.practice-slide-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  padding: 24px;
+  max-width: 760px;
+}
+
+.practice-slide-content h3 {
+  font-size: 2.7rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.practice-slide-content p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.practice-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.practice-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.practice-dots span.active {
+  background: white;
+}
+
+@media (max-width: 768px) {
+  .practice-section {
+    padding-top: 36px;
+  }
+
+  .practice-top {
+    padding-bottom: 22px;
+  }
+
+  .practice-top h2 {
+    font-size: 1.5rem;
+  }
+
+  .practice-slide {
+    height: 280px;
+  }
+
+  .practice-slide-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .practice-slide-content p {
+    font-size: 0.98rem;
+  }
+
+  .practice-arrow {
+    font-size: 2.6rem;
+    width: 44px;
+  }
+}

@@ -1,0 +1,61 @@
+import "./ContactSection.css";
+
+function ContactSection() {
+  return (
+    <section className="contact-section">
+      <div className="content-container">
+        <p className="contact-small-heading">THE WORKSHOP IS WAITING...</p>
+
+        <div className="contact-grid">
+          <div className="contact-left">
+            <h2>Get in Touch</h2>
+
+            <p className="contact-intro">
+              We’re here to help you with any questions. Reach out to us for
+              program details or to discuss how we can support you.
+            </p>
+
+            <div className="contact-block">
+              <h3>Email Us</h3>
+              <p>(backend work)</p>
+              <p>We’d love to hear from you.</p>
+              <p>Email@woodworksonline.com.au</p>
+            </div>
+
+            <div className="contact-block">
+              <h3>Call Us</h3>
+              <p>Connect with us directly.</p>
+              <p>0414 481 947</p>
+            </div>
+
+            <div className="contact-block">
+              <h3>Our Location</h3>
+              <p>9 Glenroy Crescent, St Johns Park, 2176, NSW</p>
+            </div>
+          </div>
+
+          <div className="contact-right">
+            <div className="map-placeholder">map</div>
+          </div>
+        </div>
+
+        <div className="contact-footer">
+          <div className="footer-logo">WOODWORKS LOGO</div>
+
+          <div className="footer-socials">
+            <div className="social-circle">f</div>
+            <div className="social-circle">ig</div>
+          </div>
+
+          <div className="footer-partners">
+            <div className="partner-box">abi</div>
+            <div className="partner-box">aspect</div>
+            <div className="partner-box">Brain Injury Matters</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default ContactSection;

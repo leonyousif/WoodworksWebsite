@@ -1,0 +1,124 @@
+.intro-section {
+  padding: 36px 0 56px;
+  background: var(--bg-light);
+}
+
+.intro-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 52px;
+}
+
+.intro-inner.reverse {
+  flex-direction: row-reverse;
+}
+
+.intro-image-column,
+.intro-text-column {
+  flex: 1;
+}
+
+.intro-image-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro-text-column h2 {
+  font-size: 1.85rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  margin-bottom: 20px;
+  color: var(--text-dark);
+}
+
+.intro-text {
+  max-width: 430px;
+}
+
+.intro-text p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text-body);
+  margin-bottom: 16px;
+}
+
+.intro-image-placeholder {
+  width: 100%;
+  max-width: 360px;
+  height: 320px;
+  background: #d8d8d8;
+  border: 2px dashed #8b8b8b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-weight: 600;
+  margin: 0 auto;
+}
+
+.intro-button {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 10px 18px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.84rem;
+  text-align: center;
+  line-height: 1.3;
+  max-width: 235px;
+  white-space: normal;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.intro-button:hover {
+  background: var(--accent);
+  color: white;
+}
+
+.mission-section .intro-text-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.mission-section .intro-text {
+  max-width: 430px;
+  text-align: center;
+}
+
+.mission-section .intro-text-column h2 {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .intro-section {
+    padding: 28px 0 46px;
+  }
+
+  .intro-inner,
+  .intro-inner.reverse {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .intro-text {
+    max-width: 100%;
+  }
+
+  .intro-text-column h2,
+  .mission-section .intro-text-column h2 {
+    text-align: center;
+  }
+
+  .mission-section .intro-text-column {
+    align-items: center;
+  }
+
+  .mission-section .intro-text {
+    text-align: center;
+  }
+}

@@ -1,0 +1,157 @@
+.contact-section {
+  background: var(--bg-light);
+  padding: 56px 0 0;
+}
+
+.contact-small-heading {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 34px;
+  color: var(--text-dark);
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 42px;
+  margin-bottom: 38px;
+}
+
+.contact-left {
+  flex: 1.2;
+}
+
+.contact-left h2 {
+  font-size: 2.9rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: var(--text-dark);
+}
+
+.contact-intro {
+  font-size: 1.04rem;
+  line-height: 1.7;
+  margin-bottom: 28px;
+  max-width: 560px;
+  color: var(--text-body);
+}
+
+.contact-block {
+  margin-bottom: 22px;
+}
+
+.contact-block h3 {
+  font-size: 1.18rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--text-dark);
+}
+
+.contact-block p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-body);
+  font-weight: 500;
+}
+
+.contact-right {
+  flex: 0.9;
+  display: flex;
+  justify-content: center;
+}
+
+.map-placeholder {
+  width: 320px;
+  height: 320px;
+  background: #d6edf7;
+  border-radius: 18px;
+  border: 2px dashed #7f7f7f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff3a3a;
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+
+.contact-footer {
+  border-top: 1px solid #c9c3bd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 0 20px;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  width: 160px;
+  height: 60px;
+  border: 2px dashed #777;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  background: white;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 14px;
+}
+
+.social-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid #d0cbc6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.footer-partners {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.partner-box {
+  min-width: 95px;
+  height: 46px;
+  border: 1px solid #d8d3ce;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 48px 0 0;
+  }
+
+  .contact-grid {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-left h2 {
+    font-size: 2.15rem;
+  }
+
+  .map-placeholder {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .contact-footer {
+    justify-content: center;
+  }
+}

@@ -1,112 +1,41 @@
+.page-shell {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--bg-page);
+}
+
 main {
   width: 100%;
 }
 
-.hero {
-  padding: 60px 20px 50px;
-  text-align: center;
-  position: relative;
-}
-
-.hero-left-accent {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 80px;
-  height: 4px;
-  background-color: #111;
-}
-
-.hero h1 {
-  font-size: 2.3rem;
-  font-weight: 600;
-  color: #222;
-}
-
-.section-divider {
-  max-width: 1200px;
-  margin: 0 auto 10px;
-  border-top: 1px dashed #cfcfcf;
-}
-
-.section-container {
-  max-width: 1200px;
+.content-container {
+  width: min(1120px, calc(100% - 48px));
   margin: 0 auto;
-  padding: 60px 20px;
 }
 
-.section-heading {
+.welcome-section {
+  padding: 70px 0 40px;
+  text-align: center;
+  background: var(--bg-light);
+}
+
+.welcome-section h1 {
   font-size: 2rem;
   font-weight: 600;
-  color: #111;
-  margin-bottom: 30px;
+  letter-spacing: 0.3px;
+  color: var(--text-dark);
 }
 
-.section-heading.center {
-  text-align: center;
-}
-
-.services-section {
-  background-color: #ffffff;
-}
-
-.programs-section {
-  background-color: #1f1f1f;
-}
-
-.testimonials-section {
-  background-color: #ffffff;
-  border-top: 1px dashed #cfcfcf;
-}
-
-.team-section {
-  background-color: #ffffff;
-  padding-bottom: 70px;
-}
-
-.team-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-.team-text {
-  flex: 1;
-}
-
-.team-text p {
-  font-size: 1rem;
-  line-height: 1.8;
-  color: #666;
-  max-width: 500px;
-}
-
-.team-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.team-image img {
-  width: 100%;
-  max-width: 420px;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-@media (max-width: 900px) {
-  .hero-left-accent {
-    display: none;
+@media (max-width: 768px) {
+  .content-container {
+    width: min(1120px, calc(100% - 32px));
   }
 
-  .team-content {
-    flex-direction: column;
-    text-align: center;
+  .welcome-section {
+    padding: 56px 0 32px;
   }
 
-  .team-text p {
-    max-width: 100%;
+  .welcome-section h1 {
+    font-size: 1.65rem;
   }
 }
