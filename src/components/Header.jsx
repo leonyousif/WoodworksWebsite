@@ -1,13 +1,14 @@
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header className="top-header">
       <div className="content-container">
         <nav className="top-nav">
-          <a href="#">Home</a>
+          <Link to="/">Home</Link>
           <span>|</span>
-          <a href="#">About Us</a>
+          <Link to="/about">About Us</Link>
           <span>|</span>
           <a href="#">Individualised Programs</a>
           <span>|</span>
@@ -17,7 +18,7 @@ function Header() {
           <span>|</span>
           <a href="#">After school Program</a>
           <span>|</span>
-          <a href="#">Contact us</a>
+          <Link to="/contact">Contact us</Link>
         </nav>
       </div>
     </header>

@@ -1,4 +1,6 @@
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import IntroSection from "./components/IntroSection";
@@ -6,8 +8,10 @@ import PracticeSlider from "./components/PracticeSlider";
 import CaterFor from "./components/CaterFor";
 import Testimonials from "./components/Testimonials";
 import ContactSection from "./components/ContactSection";
+import AboutUs from "./components/pages/AboutUs";
+import ContactUs from "./components/pages/ContactUs";
 
-function App() {
+function HomePage() {
   return (
     <div className="page-shell">
       <Header />
@@ -29,7 +33,7 @@ In a safe and supportive environment, participants explore woodworking, work tow
 Our experienced and supportive team is dedicated to helping each participant learn, grow, and feel proud of what they achieve. Every project completed is a step toward greater confidence, capability, and community.`}
           imageAlt="Who we are"
           buttonText="COME MEET THE TEAM"
-          buttonLink="#"
+          buttonLink="/about"
           imageLeft={false}
         />
 
@@ -49,6 +53,18 @@ Our experienced and supportive team is dedicated to helping each participant lea
         <ContactSection />
       </main>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/contact" element={<ContactUs />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
