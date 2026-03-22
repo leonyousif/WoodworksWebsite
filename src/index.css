@@ -8,19 +8,29 @@
   --bg-page: #ebe9e7;
   --bg-light: #f5f4f2;
   --bg-white: #ffffff;
-  --bg-taupe: #a49a91;
+  --bg-taupe: #b9a390;
+  --bg-card: #d8d4cf;
+
   --text-dark: #1f1f1f;
   --text-body: #4b4b4b;
   --text-light: #ffffff;
-  --accent: #f28c28;
-  --accent-soft: #ece7e2;
-  --border-soft: #d7d3cf;
+
+  --accent: #d57a2c;
+  --accent-soft: #ddd7d1;
+  --border-soft: #d2ccc7;
+
+  --container: 1120px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: var(--bg-page);
   color: var(--text-dark);
+  line-height: 1.5;
 }
 
 a {
@@ -28,7 +38,13 @@ a {
   color: inherit;
 }
 
-button {
+button,
+input,
+textarea {
   font: inherit;
-  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }

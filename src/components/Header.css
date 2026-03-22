@@ -1,18 +1,19 @@
 .top-header {
   background: var(--bg-light);
-  padding: 18px 0;
   border-bottom: 1px solid var(--border-soft);
+  padding: 14px 0;
 }
 
 .top-nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 7px;
+  gap: 8px;
   flex-wrap: wrap;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   color: #3d3d3d;
-  line-height: 1.5;
+  line-height: 1.4;
+  text-align: center;
 }
 
 .top-nav a {
@@ -21,4 +22,15 @@
 
 .top-nav a:hover {
   color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .top-header {
+    padding: 12px 0;
+  }
+
+  .top-nav {
+    gap: 6px;
+    font-size: 0.78rem;
+  }
 }
