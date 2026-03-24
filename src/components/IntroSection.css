@@ -21,6 +21,7 @@
 
 .intro-image-column {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -95,14 +96,12 @@
 }
 
 .mission-section .intro-text-column {
-  display: flex;
-  flex-direction: column;
   align-items: flex-end;
 }
 
 .mission-section .intro-text {
   max-width: 520px;
-  text-align: center;
+  text-align: right;
 }
 
 .mission-section .intro-text-column h2 {
@@ -149,6 +148,7 @@
 
   .intro-text {
     max-width: 100%;
+    text-align: center;
   }
 
   .intro-text-column h2,

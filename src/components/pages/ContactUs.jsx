@@ -16,7 +16,7 @@ function ContactUs() {
 
       <main>
         <section className="contact-intro">
-          <div className="content-container">
+          <div className="contact-intro-text">
             <p>
               We&apos;d love to hear from you. Whether you&apos;re a participant,
               parent, or support coordinator, feel free to reach out to discuss

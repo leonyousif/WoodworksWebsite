@@ -8,6 +8,10 @@ main {
   width: 100%;
 }
 
+.content-container {
+  width: min(var(--container), calc(100% - 48px));
+  margin: 0 auto;
+}
 
 .welcome-section {
   padding: 72px 0 42px;
@@ -29,6 +33,9 @@ main {
 }
 
 @media (max-width: 768px) {
+  .content-container {
+    width: min(var(--container), calc(100% - 32px));
+  }
 
   .welcome-section {
     padding: 56px 0 32px;

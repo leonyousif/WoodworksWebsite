@@ -30,7 +30,7 @@
 }
 
 .about-heading {
-    font-size: 1.05rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 18px;
     color: var(--text-dark);
@@ -57,7 +57,7 @@
 .three-c-heading {
     text-align: center;
     margin-bottom: 22px;
-    font-size: 1.1rem;
+    font-size: 1.6rem;
     font-weight: 700;
     color: var(--text-dark);
 }

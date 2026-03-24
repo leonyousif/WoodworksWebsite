@@ -13,16 +13,6 @@ function IntroSection({
     <section className={`intro-section ${missionStyle ? "mission-section" : ""}`}>
       <div className="content-container">
         <div className={`intro-inner ${imageLeft ? "reverse" : ""}`}>
-          <div className="intro-image-column">
-            <div className="intro-image-placeholder">{imageAlt}</div>
-
-            {buttonText && (
-              <a href={buttonLink} className="intro-button">
-                {buttonText}
-              </a>
-            )}
-          </div>
-
           <div className="intro-text-column">
             <h2>{title}</h2>
 
@@ -31,6 +21,16 @@ function IntroSection({
                 <p key={index}>{paragraph}</p>
               ))}
             </div>
+          </div>
+
+          <div className="intro-image-column">
+            <div className="intro-image-placeholder">{imageAlt}</div>
+
+            {buttonText && (
+              <a href={buttonLink} className="intro-button">
+                {buttonText}
+              </a>
+            )}
           </div>
         </div>
       </div>

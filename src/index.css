@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+.content-container {
+  width: min(var(--container), calc(100% - 48px));
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    width: min(var(--container), calc(100% - 32px));
+  }
+}
+
 :root {
   --bg-page: #ebe9e7;
   --bg-light: #f5f4f2;
@@ -21,6 +32,8 @@
 
   --container: 1120px;
 }
+
+
 
 html {
   scroll-behavior: smooth;
