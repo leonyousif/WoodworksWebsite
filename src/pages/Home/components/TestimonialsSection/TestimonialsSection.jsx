@@ -1,6 +1,7 @@
-import "./Testimonials.css";
+import "./TestimonialsSection.css";
+import logo from "../../../../img/woodwords logo.jpg";
 
-function Testimonials() {
+function TestimonialsSection() {
   return (
     <section className="testimonials-section">
       <div className="content-container">
@@ -10,7 +11,7 @@ function Testimonials() {
           <button className="testimonial-arrow">&#10094;</button>
 
           <div className="testimonial-center">
-            <div className="testimonial-avatar">PHOTO</div>
+            <img className="testimonial-avatar" src={logo} alt="Woodworks logo" />
 
             <div className="testimonial-text-box">
               <p>
@@ -37,4 +38,4 @@ function Testimonials() {
   );
 }
 
-export default Testimonials;
+export default TestimonialsSection;

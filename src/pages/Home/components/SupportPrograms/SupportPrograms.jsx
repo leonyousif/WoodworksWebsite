@@ -1,6 +1,8 @@
-import "./CaterFor.css";
+import "./SupportPrograms.css";
+import dadImage from "../../../../img/dad.jpg";
+import alexImage from "../../../../img/alex sanding.jpg";
 
-function CaterFor() {
+function SupportPrograms() {
   return (
     <section className="cater-for-section">
       <div className="content-container">
@@ -8,7 +10,11 @@ function CaterFor() {
 
         <div className="cater-for-grid">
           <div className="cater-card">
-            <div className="cater-image-placeholder">NDIS IMAGE</div>
+            <img
+              className="cater-image"
+              src={alexImage}
+              alt="NDIS woodworking support"
+            />
             <a href="#" className="cater-button">
               Learn more NDIS
             </a>
@@ -24,7 +30,11 @@ function CaterFor() {
           </div>
 
           <div className="cater-card">
-            <div className="cater-image-placeholder">ICARE IMAGE</div>
+            <img
+              className="cater-image"
+              src={dadImage}
+              alt="ICARE woodworking support"
+            />
             <a href="#" className="cater-button">
               Learn more ICARE
             </a>
@@ -35,4 +45,4 @@ function CaterFor() {
   );
 }
 
-export default CaterFor;
+export default SupportPrograms;

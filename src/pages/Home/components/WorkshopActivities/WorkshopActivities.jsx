@@ -1,6 +1,6 @@
-import "./PracticeSlider.css";
+import "./WorkshopActivities.css";
 
-function PracticeSlider() {
+function WorkshopActivities() {
   return (
     <section className="practice-section">
       <div className="content-container">
@@ -42,4 +42,4 @@ function PracticeSlider() {
   );
 }
 
-export default PracticeSlider;
+export default WorkshopActivities;
