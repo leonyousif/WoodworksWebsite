@@ -1,7 +1,7 @@
-import "./Header.css";
+import "./SiteHeader.css";
 import { Link } from "react-router-dom";
 
-function Header() {
+function SiteHeader() {
   return (
     <header className="top-header">
       <div className="content-container">
@@ -25,4 +25,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default SiteHeader;

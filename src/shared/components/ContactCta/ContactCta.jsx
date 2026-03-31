@@ -1,6 +1,11 @@
-import "./ContactSection.css";
+import "./ContactCta.css";
+import logo from "../../../img/woodwords logo.jpg";
 
-function ContactSection() {
+function ContactCta() {
+  const mapQuery = encodeURIComponent(
+    "9 Glenroy Crescent, St Johns Park, 2176, NSW"
+  );
+
   return (
     <section className="contact-section">
       <div className="content-container">
@@ -11,14 +16,14 @@ function ContactSection() {
             <h2>Get in Touch</h2>
 
             <p className="contact-intro">
-              We’re here to help you with any questions. Reach out to us for
+              We&apos;re here to help you with any questions. Reach out to us for
               program details or to discuss how we can support you.
             </p>
 
             <div className="contact-block">
               <h3>Email Us</h3>
               <p>(backend work)</p>
-              <p>We’d love to hear from you.</p>
+              <p>We&apos;d love to hear from you.</p>
               <p>Email@woodworksonline.com.au</p>
             </div>
 
@@ -35,12 +40,18 @@ function ContactSection() {
           </div>
 
           <div className="contact-right">
-            <div className="map-placeholder">map</div>
+            <iframe
+              className="map-embed"
+              title="Woodworks location map"
+              src={`https://www.google.com/maps?q=${mapQuery}&z=16&output=embed`}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
         </div>
 
         <div className="contact-footer">
-          <div className="footer-logo">WOODWORKS LOGO</div>
+          <img className="footer-logo" src={logo} alt="Woodworks logo" />
 
           <div className="footer-socials">
             <div className="social-circle">f</div>
@@ -58,4 +69,4 @@ function ContactSection() {
   );
 }
 
-export default ContactSection;
+export default ContactCta;

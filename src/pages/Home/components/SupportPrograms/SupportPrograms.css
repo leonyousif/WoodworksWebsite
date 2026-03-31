@@ -7,7 +7,7 @@
   text-align: center;
   color: white;
   font-size: 1.85rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 30px;
 }
 
@@ -22,16 +22,10 @@
   text-align: center;
 }
 
-.cater-image-placeholder {
+.cater-image {
   width: 100%;
   height: 210px;
-  background: #d6edf7;
-  border: 2px dashed #7c7c7c;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #555;
-  font-weight: 600;
+  object-fit: cover;
   margin-bottom: 14px;
 }
 
@@ -58,6 +52,7 @@
   justify-content: center;
   align-items: center;
   padding: 24px;
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .cater-middle-text p {

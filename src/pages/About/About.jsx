@@ -1,7 +1,11 @@
-import Header from "../Header";
-import "./AboutUs.css";
+import "./About.css";
+import SiteHeader from "../../shared/components/SiteHeader/SiteHeader";
+import ContactCta from "../../shared/components/ContactCta/ContactCta";
+import dadImage from "../../img/dad.jpg";
+import alexImage from "../../img/alex sanding.jpg";
+import heroImage from "../../assets/hero.png";
 
-function AboutUs() {
+function About() {
   const values = [
     {
       title: "Confidence",
@@ -20,23 +24,29 @@ function AboutUs() {
   const teamSections = [
     {
       text: "Our team is dedicated to fostering a supportive environment where participants can develop practical skills and take pride in creating projects of their own.",
+      image: dadImage,
       imageLeft: true,
     },
     {
       text: "We create a welcoming workshop where participants can learn at their own pace, build confidence, and enjoy working alongside others in a supportive environment.",
+      image: alexImage,
       imageLeft: false,
     },
     {
       text: "Through practical projects and guided support, participants build independence, capability, and pride in what they create.",
+      image: dadImage,
       imageLeft: true,
     },
   ];
 
   return (
     <div className="about-page">
-      <Header />
+      <SiteHeader />
 
-      <section className="about-hero-banner">
+      <section
+        className="about-hero-banner"
+        style={{ backgroundImage: `linear-gradient(rgba(47, 34, 21, 0.42), rgba(47, 34, 21, 0.42)), url(${heroImage})` }}
+      >
         <div className="about-hero-overlay">
           <div className="content-container">
             <h1>ABOUT US</h1>
@@ -59,7 +69,7 @@ function AboutUs() {
               </p>
             </div>
 
-            <h3 className="three-c-heading">The three C&apos;s</h3>
+            <h3 className="three-c-heading">The Three C&apos;s</h3>
 
             <div className="three-c-grid">
               {values.map((item) => (
@@ -87,10 +97,7 @@ function AboutUs() {
                   key={index}
                 >
                   <div className="team-image-circle">
-                    <img
-                      src="https://via.placeholder.com/220"
-                      alt="Woodworks team"
-                    />
+                    <img src={section.image} alt="Woodworks team" />
                   </div>
 
                   <div className="team-text-box">
@@ -102,56 +109,10 @@ function AboutUs() {
           </div>
         </section>
 
-        <section className="about-footer-section">
-          <div className="content-container">
-            <div className="about-footer-content">
-              <h2>WANT TO FIND OUT MORE?</h2>
-
-              <div className="about-footer-block">
-                <h3>Contact us Here</h3>
-                <p>
-                  We&apos;re here to help you with any questions. Reach out to
-                  us for program details or to discuss how we can support you.
-                </p>
-              </div>
-
-              <div className="about-footer-block">
-                <h3>Email us</h3>
-                <p>We&apos;d love to hear from you</p>
-                <p>Email@woodworksonline.com.au</p>
-              </div>
-
-              <div className="about-footer-block">
-                <h3>Call us</h3>
-                <p>Connect with us directly.</p>
-                <p>0414 481 947</p>
-              </div>
-
-              <div className="about-footer-block">
-                <h3>Our Location</h3>
-                <p>9 Glenroy Crescent, St Johns Park, 2176, NSW</p>
-              </div>
-            </div>
-
-            <div className="about-footer-bar">
-              <div className="about-footer-logo">WOODWORKS</div>
-
-              <div className="about-footer-socials">
-                <span>Facebook</span>
-                <span>Instagram</span>
-              </div>
-
-              <div className="about-footer-partners">
-                <span>ABI Services</span>
-                <span>Aspect</span>
-                <span>Daily Matters</span>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ContactCta />
       </main>
     </div>
   );
 }
 
-export default AboutUs;
+export default About;

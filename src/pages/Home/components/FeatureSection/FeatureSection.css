@@ -5,7 +5,7 @@
 
 .intro-inner {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 72px;
 }
@@ -33,7 +33,7 @@
 }
 
 .intro-text-column h2 {
-  font-size: 2.15rem;
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.2px;
   margin-bottom: 24px;
@@ -51,18 +51,18 @@
   margin-bottom: 16px;
 }
 
-.intro-image-placeholder {
+.intro-image-frame {
   width: 100%;
-  max-width: 390px;
-  height: 330px;
-  background: #d8d8d8;
-  border: 2px dashed #8a8a8a;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #5e5e5e;
-  font-weight: 600;
+  max-width: 360px;
+  aspect-ratio: 0.78;
+  overflow: hidden;
   margin: 0 auto;
+}
+
+.intro-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .intro-button {
@@ -82,6 +82,7 @@
   min-height: 48px;
   white-space: normal;
   transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.06);
 }
 
 .intro-button:hover {
@@ -90,7 +91,10 @@
   transform: translateY(-1px);
 }
 
-/* mission section */
+.mission-button {
+  max-width: 250px;
+}
+
 .mission-section {
   padding-top: 8px;
 }
@@ -100,20 +104,18 @@
 }
 
 .mission-section .intro-text {
-  max-width: 520px;
-  text-align: right;
+  max-width: 440px;
+  text-align: center;
 }
 
 .mission-section .intro-text-column h2 {
-  text-align: right;
+  text-align: center;
 }
 
 .mission-section .intro-button {
   align-self: center;
-  max-width: 340px;
 }
 
-/* tablet */
 @media (max-width: 992px) {
   .intro-inner {
     gap: 46px;
@@ -123,13 +125,11 @@
     font-size: 1.9rem;
   }
 
-  .intro-image-placeholder {
+  .intro-image-frame {
     max-width: 340px;
-    height: 290px;
   }
 }
 
-/* mobile */
 @media (max-width: 768px) {
   .intro-section {
     padding: 42px 0 52px;
@@ -158,9 +158,8 @@
     margin-bottom: 18px;
   }
 
-  .intro-image-placeholder {
+  .intro-image-frame {
     max-width: 100%;
-    height: 260px;
   }
 
   .intro-button {
