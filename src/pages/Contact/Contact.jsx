@@ -1,17 +1,12 @@
 import "./Contact.css";
+import { Link } from "react-router-dom";
 import SiteHeader from "../../shared/components/SiteHeader/SiteHeader";
-import logo from "../../img/woodwords logo.jpg";
 import heroImage from "../../assets/hero.png";
 import workshopImage from "../../img/alex sanding.jpg";
 
 function Contact() {
   return (
     <div className="contact-page">
-      <div className="contact-top-brand">
-        <img className="contact-brand-logo" src={logo} alt="Woodworks logo" />
-        <p>A Capacity and Skills Building Workshop</p>
-      </div>
-
       <SiteHeader />
 
       <section
@@ -31,7 +26,9 @@ function Contact() {
             <div className="contact-cards">
               <div className="contact-card">
                 <h3>Email Us</h3>
-                <p>Email@woodworksonline.com.au</p>
+                <a className="contact-card-link" href="#contact-form">
+                  Use the contact form below
+                </a>
               </div>
 
               <div className="contact-card">
@@ -64,8 +61,77 @@ function Contact() {
 
         <section className="contact-cta">
           <div className="content-container">
-            <div className="cta-box">
-              <h2>SEND US A MESSAGE BACK END</h2>
+            <div className="cta-box" id="contact-form">
+              <div className="contact-form-heading">
+                <h2>Email Us</h2>
+                <p>
+                  We&apos;d love to hear from you. Send us a message and
+                  we&apos;ll get back to you as soon as we can.
+                </p>
+                <p className="contact-form-email">
+                  Use the form below and we&apos;ll get back to you as soon as we can.
+                </p>
+              </div>
+
+              <form
+                className="contact-form"
+                action="https://formsubmit.co/leon.yousif01@gmail.com"
+                method="POST"
+              >
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="New Woodworks website enquiry"
+                />
+                <input type="hidden" name="_captcha" value="false" />
+
+                <div className="contact-form-grid">
+                  <label className="contact-field">
+                    <span>Name</span>
+                    <input type="text" name="name" required />
+                  </label>
+
+                  <label className="contact-field">
+                    <span>Email</span>
+                    <input type="email" name="email" required />
+                  </label>
+
+                  <label className="contact-field">
+                    <span>Phone</span>
+                    <input type="tel" name="phone" />
+                  </label>
+
+                  <label className="contact-field">
+                    <span>Program of interest</span>
+                    <select name="program">
+                      <option>General enquiry</option>
+                      <option>NDIS</option>
+                      <option>Individualised Programs</option>
+                      <option>After school Program</option>
+                      <option>ICARE</option>
+                    </select>
+                  </label>
+                </div>
+
+                <label className="contact-field contact-field-full">
+                  <span>Message</span>
+                  <textarea
+                    name="message"
+                    rows="6"
+                    required
+                    placeholder="Tell us a little about what support or workshop information you need."
+                  ></textarea>
+                </label>
+
+                <div className="contact-form-actions">
+                  <button type="submit" className="contact-submit-button">
+                    Send enquiry
+                  </button>
+                  <Link to="/" className="contact-secondary-link">
+                    Back to home
+                  </Link>
+                </div>
+              </form>
             </div>
           </div>
         </section>

@@ -16,19 +16,26 @@
 }
 
 :root {
-  --bg-page: #ebe9e7;
-  --bg-light: #f5f4f2;
-  --bg-white: #ffffff;
-  --bg-taupe: #b9a390;
-  --bg-card: #d8d4cf;
+  --bg-page: #f1ece5;
+  --bg-light: #f8f4ef;
+  --bg-white: #fffdf9;
+  --bg-taupe: #7c6552;
+  --bg-card: #e4d8cc;
 
-  --text-dark: #1f1f1f;
-  --text-body: #4b4b4b;
-  --text-light: #ffffff;
+  --text-dark: #1f1812;
+  --text-body: #433932;
+  --text-light: #fffaf5;
 
-  --accent: #d57a2c;
-  --accent-soft: #ddd7d1;
-  --border-soft: #d2ccc7;
+  --accent: #9c5a2c;
+  --accent-soft: #eadfce;
+  --border-soft: #d5c7b8;
+  --card-border: rgba(124, 101, 82, 0.22);
+  --card-shadow: 0 18px 42px rgba(52, 36, 23, 0.1), 0 4px 14px rgba(52, 36, 23, 0.06);
+  --card-shadow-hover: 0 24px 56px rgba(52, 36, 23, 0.14), 0 8px 18px rgba(52, 36, 23, 0.08);
+  --card-radius: 28px;
+  --card-radius-sm: 22px;
+  --hero-title-size: clamp(2.75rem, 6vw, 4.2rem);
+  --hero-title-weight: 700;
 
   --container: 1120px;
 }

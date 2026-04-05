@@ -1,0 +1,381 @@
+.ndis-page {
+  background: var(--bg-page);
+  color: var(--text-dark);
+}
+
+.ndis-brand-bar {
+  background: var(--bg-light);
+  padding: 18px 0 12px;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.ndis-brand-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.ndis-brand-logo,
+.ndis-footer-logo {
+  width: 150px;
+  height: auto;
+  mix-blend-mode: multiply;
+}
+
+.ndis-brand-copy {
+  flex: 1;
+  text-align: center;
+}
+
+.ndis-brand-tagline {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.ndis-hero {
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+}
+
+.ndis-hero .content-container {
+  text-align: center;
+}
+
+.ndis-hero h1 {
+  margin: 0;
+  color: var(--text-light);
+  font-size: var(--hero-title-size);
+  font-weight: var(--hero-title-weight);
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+
+.ndis-overview {
+  padding: 44px 0 34px;
+}
+
+.ndis-overview-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 34px;
+  align-items: start;
+}
+
+.ndis-overview-copy p {
+  font-size: 1.2rem;
+  line-height: 1.75;
+  color: var(--text-body);
+}
+
+.ndis-inline-link {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.ndis-overview-copy h2 {
+  margin-top: 38px;
+  max-width: 640px;
+  font-size: clamp(1.7rem, 3.8vw, 2.5rem);
+  line-height: 1.28;
+  font-weight: 700;
+}
+
+.ndis-overview-image img {
+  width: 100%;
+  aspect-ratio: 0.8;
+  object-fit: cover;
+}
+
+.ndis-supports {
+  padding: 6px 0 56px;
+}
+
+.ndis-support-list {
+  display: grid;
+  gap: 34px;
+}
+
+.ndis-support-item {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 28px;
+  align-items: center;
+  padding: 26px 28px;
+  background: rgba(255, 253, 249, 0.76);
+  border: 4px solid var(--card-border);
+  border-radius: var(--card-radius-sm);
+  box-shadow: var(--card-shadow);
+}
+
+.ndis-support-item p {
+  font-size: clamp(1.3rem, 3.2vw, 2rem);
+  line-height: 1.3;
+}
+
+.ndis-support-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: var(--accent);
+  position: relative;
+}
+
+.ndis-support-ring {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  top: 14px;
+  left: 10px;
+}
+
+.ndis-support-tool {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  top: 29px;
+  left: 20px;
+  transform: rotate(38deg);
+  border-radius: 999px;
+}
+
+.ndis-support-tool::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  right: -2px;
+  top: -4px;
+}
+
+.ndis-testimonials {
+  background: #ddd2c6;
+  padding: 56px 0 64px;
+}
+
+.ndis-testimonials h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 34px;
+}
+
+.ndis-testimonial-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+
+.ndis-arrow {
+  border: none;
+  background: transparent;
+  font-size: 4rem;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+.ndis-testimonial-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(100%, 680px);
+}
+
+.ndis-testimonial-avatar-wrap {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--accent);
+  margin-bottom: 24px;
+  background: var(--bg-white);
+}
+
+.ndis-testimonial-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ndis-testimonial-box {
+  width: min(100%, 560px);
+  min-height: 104px;
+  padding: 28px 26px;
+  border: 4px solid var(--card-border);
+  background: linear-gradient(180deg, #fffefa 0%, #fbf5ee 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+}
+
+.ndis-testimonial-box p {
+  text-align: center;
+  color: var(--text-body);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.ndis-testimonial-dots {
+  display: flex;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.ndis-testimonial-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text-dark);
+  opacity: 0.25;
+}
+
+.ndis-testimonial-dots span.active {
+  opacity: 1;
+}
+
+.ndis-contact {
+  padding: 34px 0 0;
+  background: var(--bg-white);
+}
+
+.ndis-contact-copy {
+  max-width: 700px;
+  padding: 34px 32px;
+  border: 4px solid var(--card-border);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  background: linear-gradient(180deg, #fffefa 0%, #fbf5ee 100%);
+}
+
+.ndis-contact-copy h3 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.ndis-contact-block + .ndis-contact-block {
+  margin-top: 22px;
+}
+
+.ndis-contact-block h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.ndis-contact-block p {
+  color: var(--text-body);
+  line-height: 1.65;
+}
+
+.ndis-footer {
+  border-top: 1px solid var(--border-soft);
+  background: var(--bg-light);
+}
+
+.ndis-footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 22px;
+  padding: 18px 0;
+  flex-wrap: wrap;
+}
+
+.ndis-footer-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.ndis-footer-socials a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--bg-white);
+  border: 1px solid var(--border-soft);
+  font-weight: 700;
+}
+
+.ndis-footer-partners {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.ndis-footer-partners span {
+  min-height: 44px;
+  padding: 10px 14px;
+  background: var(--bg-white);
+  border: 1px solid var(--border-soft);
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+@media (max-width: 980px) {
+  .ndis-overview-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .ndis-brand-inner,
+  .ndis-footer-inner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .ndis-brand-tagline {
+    font-size: 1.2rem;
+  }
+
+  .ndis-hero {
+    min-height: 210px;
+  }
+
+  .ndis-overview {
+    padding: 34px 0 28px;
+  }
+
+  .ndis-overview-copy p {
+    font-size: 1rem;
+  }
+
+  .ndis-overview-copy h2 {
+    margin-top: 28px;
+  }
+
+  .ndis-support-item {
+    grid-template-columns: 1fr;
+    justify-items: start;
+    gap: 16px;
+  }
+
+  .ndis-support-item p {
+    font-size: 1.2rem;
+  }
+
+  .ndis-testimonial-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ndis-arrow {
+    font-size: 3rem;
+  }
+}

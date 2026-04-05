@@ -22,7 +22,7 @@
   border: none;
   background: transparent;
   font-size: 3.7rem;
-  color: #111;
+  color: var(--text-dark);
   width: 54px;
   transition: opacity 0.2s ease;
 }
@@ -43,7 +43,7 @@
   width: 118px;
   height: 118px;
   border-radius: 50%;
-  border: 3px solid #7c5e47;
+  border: 3px solid var(--accent);
   object-fit: cover;
   margin-bottom: 24px;
 }
@@ -53,11 +53,23 @@
   max-width: 540px;
   min-height: 118px;
   padding: 28px 28px;
-  background: var(--bg-white);
-  border: 3px solid #efe7df;
+  background: linear-gradient(180deg, #fffefa 0%, #fbf5ee 100%);
+  border: 4px solid var(--card-border);
+  border-radius: var(--card-radius);
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: var(--card-shadow);
+  position: relative;
+}
+
+.testimonial-text-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.82);
+  pointer-events: none;
 }
 
 .testimonial-text-box p {
@@ -78,7 +90,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #111;
+  background: var(--text-dark);
   opacity: 0.25;
 }
 

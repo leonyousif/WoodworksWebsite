@@ -43,7 +43,7 @@ Our experienced and supportive team is dedicated to helping each participant lea
           imageAlt="Our mission"
           imageSrc={dadImage}
           buttonText="Learn more about our individualised programs"
-          buttonLink="#"
+          buttonLink="/individualised-programs"
           imageLeft={true}
           missionStyle={true}
         />

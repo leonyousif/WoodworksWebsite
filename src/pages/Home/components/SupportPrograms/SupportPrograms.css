@@ -43,7 +43,7 @@
 
 .cater-button:hover {
   background: var(--accent);
-  color: white;
+  color: var(--text-light);
 }
 
 .cater-middle-text {
@@ -52,7 +52,7 @@
   justify-content: center;
   align-items: center;
   padding: 24px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 250, 245, 0.1);
 }
 
 .cater-middle-text p {

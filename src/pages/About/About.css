@@ -16,12 +16,18 @@
   padding: 72px 0;
 }
 
-.about-hero-banner h1 {
-  color: var(--text-light);
-  font-size: 3rem;
-  font-weight: 700;
+.about-hero-overlay .content-container {
   text-align: center;
-  letter-spacing: 0.2px;
+}
+
+.about-hero-banner h1 {
+  margin: 0;
+  color: var(--text-light);
+  font-size: var(--hero-title-size);
+  font-weight: var(--hero-title-weight);
+  text-align: center;
+  letter-spacing: 0.04em;
+  line-height: 1;
 }
 
 .about-section {
@@ -36,14 +42,27 @@
 }
 
 .about-story-box {
-  background: var(--bg-white);
+  background: linear-gradient(180deg, #fffefa 0%, #faf4ec 100%);
   min-height: 260px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 36px 32px;
+  padding: 42px 38px;
   margin-bottom: 34px;
+  border: 4px solid var(--card-border);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  position: relative;
+}
+
+.about-story-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  pointer-events: none;
 }
 
 .about-story-box p {
@@ -69,14 +88,16 @@
 }
 
 .three-c-card {
-  background: #dfddd9;
-  border-radius: 24px;
-  padding: 24px 18px;
+  background: linear-gradient(180deg, rgba(255, 253, 249, 0.98), rgba(241, 236, 229, 0.92));
+  border: 4px solid var(--card-border);
+  border-radius: var(--card-radius-sm);
+  padding: 30px 24px;
   text-align: center;
   min-height: 135px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-shadow: var(--card-shadow);
 }
 
 .three-c-card h4 {
@@ -87,9 +108,9 @@
 }
 
 .three-c-card p {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--accent);
-  line-height: 1.45;
+  line-height: 1.55;
   max-width: 220px;
   margin: 0 auto;
 }
@@ -106,12 +127,15 @@
 }
 
 .team-row {
-  background: #ddd9d5;
-  padding: 28px 32px;
+  background: linear-gradient(180deg, rgba(255, 253, 249, 0.9), rgba(238, 230, 220, 0.9));
+  padding: 30px 32px;
   display: flex;
   align-items: center;
   gap: 34px;
   margin-bottom: 22px;
+  border: 4px solid var(--card-border);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
 }
 
 .team-row.image-right {
@@ -125,7 +149,8 @@
   overflow: hidden;
   flex-shrink: 0;
   background: var(--bg-white);
-  border: 4px solid #2958ff;
+  border: 3px solid rgba(156, 90, 44, 0.45);
+  box-shadow: 0 12px 24px rgba(52, 36, 23, 0.12);
 }
 
 .team-image-circle img {
@@ -137,12 +162,15 @@
 .team-text-box {
   flex: 1;
   min-height: 128px;
-  background: var(--bg-white);
+  background: linear-gradient(180deg, #fffefa 0%, #fbf5ee 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 26px;
+  padding: 30px;
   text-align: center;
+  border: 4px solid rgba(124, 101, 82, 0.14);
+  border-radius: var(--card-radius-sm);
+  box-shadow: 0 10px 24px rgba(52, 36, 23, 0.06);
 }
 
 .team-text-box p {
@@ -153,10 +181,6 @@
 }
 
 @media (max-width: 900px) {
-  .about-hero-banner h1 {
-    font-size: 2.35rem;
-  }
-
   .three-c-grid {
     grid-template-columns: 1fr;
   }
@@ -184,10 +208,6 @@
 
   .about-hero-overlay {
     padding: 58px 0;
-  }
-
-  .about-hero-banner h1 {
-    font-size: 2rem;
   }
 
   .about-section {

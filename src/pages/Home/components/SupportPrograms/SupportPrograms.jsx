@@ -1,4 +1,5 @@
 import "./SupportPrograms.css";
+import { Link } from "react-router-dom";
 import dadImage from "../../../../img/dad.jpg";
 import alexImage from "../../../../img/alex sanding.jpg";
 
@@ -15,9 +16,9 @@ function SupportPrograms() {
               src={alexImage}
               alt="NDIS woodworking support"
             />
-            <a href="#" className="cater-button">
+            <Link to="/ndis" className="cater-button">
               Learn more NDIS
-            </a>
+            </Link>
           </div>
 
           <div className="cater-middle-text">

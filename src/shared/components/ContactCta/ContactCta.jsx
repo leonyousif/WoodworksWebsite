@@ -1,4 +1,5 @@
 import "./ContactCta.css";
+import { Link } from "react-router-dom";
 import logo from "../../../img/woodwords logo.jpg";
 
 function ContactCta() {
@@ -22,9 +23,10 @@ function ContactCta() {
 
             <div className="contact-block">
               <h3>Email Us</h3>
-              <p>(backend work)</p>
               <p>We&apos;d love to hear from you.</p>
-              <p>Email@woodworksonline.com.au</p>
+              <Link className="contact-inline-link" to="/contact">
+                Use the contact form
+              </Link>
             </div>
 
             <div className="contact-block">
