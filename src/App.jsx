@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import AfterSchool from "./pages/AfterSchool/AfterSchool";
 import Contact from "./pages/Contact/Contact";
+import ContactSuccess from "./pages/ContactSuccess/ContactSuccess";
 import Icare from "./pages/Icare/Icare";
 import IndividualisedPrograms from "./pages/IndividualisedPrograms/IndividualisedPrograms";
 import Ndis from "./pages/Ndis/Ndis";
@@ -24,6 +25,7 @@ function App() {
         />
         <Route path="/ndis" element={<Ndis />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/contact/success" element={<ContactSuccess />} />
       </Routes>
     </BrowserRouter>
   );

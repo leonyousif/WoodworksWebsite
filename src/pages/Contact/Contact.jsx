@@ -5,6 +5,11 @@ import heroImage from "../../assets/hero.png";
 import workshopImage from "../../img/alex sanding.jpg";
 
 function Contact() {
+  const successUrl =
+    typeof window !== "undefined"
+      ? `${window.location.origin}/contact/success`
+      : "/contact/success";
+
   return (
     <div className="contact-page">
       <SiteHeader />
@@ -78,6 +83,7 @@ function Contact() {
                 action="https://formsubmit.co/leon.yousif01@gmail.com"
                 method="POST"
               >
+                <input type="hidden" name="_next" value={successUrl} />
                 <input
                   type="hidden"
                   name="_subject"
