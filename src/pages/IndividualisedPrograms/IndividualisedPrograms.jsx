@@ -2,8 +2,8 @@ import "./IndividualisedPrograms.css";
 import { Link } from "react-router-dom";
 
 import SiteHeader from "../../shared/components/SiteHeader/SiteHeader";
+import ContactCta from "../../shared/components/ContactCta/ContactCta";
 import heroImage from "../../assets/hero.png";
-import logo from "../../img/woodwords logo.jpg";
 import alexImage from "../../img/alex sanding.jpg";
 import dadImage from "../../img/dad.jpg";
 
@@ -62,7 +62,7 @@ function IndividualisedPrograms() {
 
             <p>
               At Woodworks, every program begins with choice. We meet with each
-              participant to talk about their interests, needs, abilities, and
+              participant, to talk about their interests, needs, abilities, and
               personal goals for attending the workshop.
             </p>
 
@@ -111,9 +111,7 @@ function IndividualisedPrograms() {
                       {item.image ? (
                         <img src={item.image} alt={item.alt} />
                       ) : (
-                        <div className="showcase-accent-panel">
-                          More tailored projects
-                        </div>
+                        <div className="showcase-accent-panel" aria-hidden="true"></div>
                       )}
                     </div>
 
@@ -133,7 +131,7 @@ function IndividualisedPrograms() {
         </section>
 
         <section className="individualised-session-details">
-          <div className="content-container session-details-grid">
+          <div className="content-container session-details-stack">
             <article className="session-copy-card">
               <h3>SESSION TIMES</h3>
 
@@ -157,13 +155,11 @@ function IndividualisedPrograms() {
 
               <p>
                 Our workshop operates during weekday hours, with additional
-                after-school sessions available for participants needing later
-                support.
+                after-school sessions{" "}
+                <Link to="/contact" className="service-link">
+                  Learn more here
+                </Link>
               </p>
-
-              <Link to="/contact" className="service-link">
-                Learn more here
-              </Link>
             </article>
           </div>
         </section>
@@ -187,77 +183,7 @@ function IndividualisedPrograms() {
           </div>
         </section>
 
-        <section className="individualised-contact">
-          <div className="content-container individualised-contact-grid">
-            <div className="individualised-contact-copy">
-              <h3>INTERESTED IN SESSIONS?</h3>
-
-              <div className="contact-detail-block">
-                <h4>Contact us here</h4>
-                <p>
-                  We&apos;re here to help you with any questions. Reach out to
-                  us for program details or to discuss how we can support you.
-                </p>
-              </div>
-
-              <div className="contact-detail-block">
-                <h4>Email us</h4>
-                <p>We&apos;d love to hear from you.</p>
-                <Link to="/contact" className="service-link">
-                  Use the contact form
-                </Link>
-              </div>
-
-              <div className="contact-detail-block">
-                <h4>Call us</h4>
-                <p>Connect with us directly.</p>
-                <p>0414 481 947</p>
-              </div>
-
-              <div className="contact-detail-block">
-                <h4>Our location</h4>
-                <p>9 Glenroy Crescent, St Johns Park, 2176, NSW</p>
-              </div>
-            </div>
-
-            <div className="individualised-contact-panel">
-              <div className="individualised-mini-card">
-                <span>Flexible support</span>
-                <strong>Choice-led sessions</strong>
-              </div>
-
-              <div className="individualised-mini-card">
-                <span>Hands-on growth</span>
-                <strong>Confidence, capability, community</strong>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <footer className="individualised-footer">
-          <div className="content-container individualised-footer-inner">
-            <img
-              className="individualised-footer-logo"
-              src={logo}
-              alt="Woodworks logo"
-            />
-
-            <div className="individualised-footer-socials" aria-label="Social links">
-              <a href="#" aria-label="Facebook">
-                f
-              </a>
-              <a href="#" aria-label="Instagram">
-                ig
-              </a>
-            </div>
-
-            <div className="individualised-footer-partners" aria-label="Partner organisations">
-              <span>abi services</span>
-              <span>aspect</span>
-              <span>Brain Injury Matters</span>
-            </div>
-          </div>
-        </footer>
+        <ContactCta smallHeading="INTERESTED IN SESSIONS?" />
       </main>
     </div>
   );

@@ -2,10 +2,8 @@ import "./Ndis.css";
 import { Link } from "react-router-dom";
 
 import SiteHeader from "../../shared/components/SiteHeader/SiteHeader";
+import ContactCta from "../../shared/components/ContactCta/ContactCta";
 import heroImage from "../../assets/hero.png";
-import logo from "../../img/woodwords logo.jpg";
-import alexImage from "../../img/alex sanding.jpg";
-import dadImage from "../../img/dad.jpg";
 
 function Ndis() {
   const supports = [
@@ -52,7 +50,9 @@ function Ndis() {
             </div>
 
             <div className="ndis-overview-image">
-              <img src={dadImage} alt="Woodworks participants building together" />
+              <div className="ndis-image-placeholder" role="img" aria-label="Placeholder image">
+                <span>PLACEHOLDER</span>
+              </div>
             </div>
           </div>
         </section>
@@ -63,8 +63,7 @@ function Ndis() {
               {supports.map((item) => (
                 <article className="ndis-support-item" key={item}>
                   <div className="ndis-support-icon" aria-hidden="true">
-                    <span className="ndis-support-ring"></span>
-                    <span className="ndis-support-tool"></span>
+                    <span>PLACEHOLDER</span>
                   </div>
 
                   <p>{item}</p>
@@ -84,20 +83,15 @@ function Ndis() {
               </button>
 
               <div className="ndis-testimonial-center">
-                <div className="ndis-testimonial-avatar-wrap">
-                  <img
-                    className="ndis-testimonial-avatar"
-                    src={alexImage}
-                    alt="Participant testimonial"
-                  />
+                <div className="ndis-testimonial-avatar-wrap" aria-hidden="true">
+                  <div className="ndis-testimonial-cloud ndis-testimonial-cloud-one"></div>
+                  <div className="ndis-testimonial-cloud ndis-testimonial-cloud-two"></div>
+                  <div className="ndis-testimonial-hill ndis-testimonial-hill-back"></div>
+                  <div className="ndis-testimonial-hill ndis-testimonial-hill-front"></div>
                 </div>
 
                 <div className="ndis-testimonial-box">
-                  <p>
-                    Woodworks gives participants a welcoming place to build
-                    practical skills, confidence, and connection through
-                    meaningful hands-on projects.
-                  </p>
+                  <p>PLACEHOLDER</p>
                 </div>
 
                 <div className="ndis-testimonial-dots" aria-label="Testimonial slides">
@@ -114,61 +108,7 @@ function Ndis() {
           </div>
         </section>
 
-        <section className="ndis-contact">
-          <div className="content-container">
-            <div className="ndis-contact-copy">
-              <h3>YOUR NEXT PROJECT STARTS NOW</h3>
-
-              <div className="ndis-contact-block">
-                <h4>Contact us here</h4>
-                <p>
-                  We&apos;re here to help you with any questions. Reach out to
-                  us for program details or to discuss how we can support you.
-                </p>
-              </div>
-
-              <div className="ndis-contact-block">
-                <h4>Email us</h4>
-                <p>We&apos;d love to hear from you.</p>
-                <Link to="/contact" className="ndis-inline-link">
-                  Use the contact form
-                </Link>
-              </div>
-
-              <div className="ndis-contact-block">
-                <h4>Call us</h4>
-                <p>Connect with us directly.</p>
-                <p>0414 481 947</p>
-              </div>
-
-              <div className="ndis-contact-block">
-                <h4>Our location</h4>
-                <p>9 Glenroy Crescent, St Johns Park, 2176, NSW</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <footer className="ndis-footer">
-          <div className="content-container ndis-footer-inner">
-            <img className="ndis-footer-logo" src={logo} alt="Woodworks logo" />
-
-            <div className="ndis-footer-socials" aria-label="Social links">
-              <a href="#" aria-label="Facebook">
-                f
-              </a>
-              <a href="#" aria-label="Instagram">
-                ig
-              </a>
-            </div>
-
-            <div className="ndis-footer-partners" aria-label="Partner organisations">
-              <span>abi services</span>
-              <span>aspect</span>
-              <span>Brain Injury Matters</span>
-            </div>
-          </div>
-        </footer>
+        <ContactCta smallHeading="YOUR NEXT PROJECT STARTS NOW" />
       </main>
     </div>
   );
