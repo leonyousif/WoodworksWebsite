@@ -23,10 +23,9 @@ function SupportPrograms() {
 
           <div className="cater-middle-text">
             <p>
-              We support people through NDIS, ICARE, after school programs, and
-              individualised workshop participation. Our programs are designed to
-              help build confidence, independence, practical ability, and social
-              connection.
+              Woodworks supports a range of people, including NDIS participants, individuals funded through iCare, and those looking to build practical skills in a supportive environment.
+
+              Our programs are suited to people who enjoy hands-on activities and want to develop confidence, capability and experience  community.
             </p>
           </div>
 

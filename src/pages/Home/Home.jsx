@@ -6,13 +6,12 @@ import HeroBanner from "./components/HeroBanner/HeroBanner";
 import FeatureSection from "./components/FeatureSection/FeatureSection";
 import WorkshopActivities from "./components/WorkshopActivities/WorkshopActivities";
 import SupportPrograms from "./components/SupportPrograms/SupportPrograms";
-import TestimonialsSection from "./components/TestimonialsSection/TestimonialsSection";
 import alexImage from "../../img/alex sanding.jpg";
 import dadImage from "../../img/dad.jpg";
 
 function Home() {
   return (
-    <div className="page-shell">
+    <div className="page-shell home-page">
       <SiteHeader />
       <HeroBanner />
 
@@ -27,9 +26,11 @@ function Home() {
           title="WHO ARE WE ?"
           text={`Woodworks is an inclusive woodworking workshop where participants build practical skills, confidence, and independence through hands-on projects.
 
-In a safe and supportive environment, participants explore woodworking, work towards personal goals, and experience the satisfaction of creating something with their own hands.
+In a safe and supportive environment, participants use woodworking skills to work towards personal goals, and experience the satisfaction of creating something with their own hands.
 
-Our experienced and supportive team is dedicated to helping each participant learn, grow, and feel proud of what they achieve. Every project completed is a step toward greater confidence, capability, and community.`}
+Our experienced and supportive team is dedicated to helping each participant learn, grow, and feel proud of what they have achieved.
+
+At Woodworks we like to say that the projects, are as individual and unique, as the people that made them.`}
           imageAlt="Who we are"
           imageSrc={alexImage}
           buttonText="COME MEET THE TEAM"
@@ -50,7 +51,6 @@ Our experienced and supportive team is dedicated to helping each participant lea
 
         <WorkshopActivities />
         <SupportPrograms />
-        <TestimonialsSection />
         <ContactCta />
       </main>
     </div>

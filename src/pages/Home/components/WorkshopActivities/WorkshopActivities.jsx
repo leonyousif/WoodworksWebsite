@@ -7,8 +7,8 @@ function WorkshopActivities() {
         <div className="practice-top">
           <h2>HOW WE PUT THE MISSION INTO PRACTICE</h2>
           <p>
-            Participants are supported to learn and practice a range of practical
-            and personal skills through hands-on woodworking activities, including:
+            Participants are supported to learn and practice a range of practical and
+            personal skills through hands-on woodworking activities, including:
           </p>
         </div>
       </div>

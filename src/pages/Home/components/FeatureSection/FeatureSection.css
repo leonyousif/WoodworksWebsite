@@ -105,7 +105,8 @@
 
 .mission-section .intro-text {
   max-width: 440px;
-  text-align: center;
+  margin-left: auto;
+  text-align: right;
 }
 
 .mission-section .intro-text-column h2 {
@@ -172,6 +173,6 @@
   }
 
   .mission-section .intro-text {
-    text-align: center;
+    text-align: right;
   }
 }
