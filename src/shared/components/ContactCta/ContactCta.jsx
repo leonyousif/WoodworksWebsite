@@ -2,7 +2,7 @@ import "./ContactCta.css";
 import { Link } from "react-router-dom";
 import logo from "../../../img/woodwords logo.jpg";
 
-function ContactCta() {
+function ContactCta({ smallHeading = "THE WORKSHOP IS WAITING..." }) {
   const mapQuery = encodeURIComponent(
     "9 Glenroy Crescent, St Johns Park, 2176, NSW"
   );
@@ -10,7 +10,7 @@ function ContactCta() {
   return (
     <section className="contact-section">
       <div className="content-container">
-        <p className="contact-small-heading">THE WORKSHOP IS WAITING...</p>
+        <p className="contact-small-heading">{smallHeading}</p>
 
         <div className="contact-grid">
           <div className="contact-left">
