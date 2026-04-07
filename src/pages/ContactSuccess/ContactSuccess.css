@@ -9,14 +9,17 @@
   background-position: center;
   background-size: cover;
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 .contact-success-hero-overlay {
   width: 100%;
   padding: 72px 0;
+}
+
+.contact-success-hero-overlay .content-container {
+  max-width: var(--page-width);
+  text-align: left;
 }
 
 .contact-success-hero h1 {
@@ -26,6 +29,7 @@
   letter-spacing: 0.04em;
   line-height: 1;
   margin: 0;
+  text-align: left;
 }
 
 .contact-success-section {

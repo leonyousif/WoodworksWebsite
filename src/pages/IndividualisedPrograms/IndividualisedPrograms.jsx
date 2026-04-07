@@ -4,21 +4,19 @@ import { Link } from "react-router-dom";
 import SiteHeader from "../../shared/components/SiteHeader/SiteHeader";
 import ContactCta from "../../shared/components/ContactCta/ContactCta";
 import heroImage from "../../assets/hero.png";
-import alexImage from "../../img/alex sanding.jpg";
-import dadImage from "../../img/dad.jpg";
 
 function IndividualisedPrograms() {
   const showcaseItems = [
     {
-      image: alexImage,
-      alt: "Participant holding a Woodworks project sign",
+      image: null,
+      alt: "Placeholder image",
       quote:
         "Woodworks is a great school for people with all abilities to come learn skills.",
       author: "Alex",
     },
     {
-      image: dadImage,
-      alt: "Participant holding a timber tray project",
+      image: null,
+      alt: "Placeholder image",
       quote:
         "Each project helps build confidence, focus, and a real sense of achievement.",
       author: "Participant feedback",
@@ -111,7 +109,9 @@ function IndividualisedPrograms() {
                       {item.image ? (
                         <img src={item.image} alt={item.alt} />
                       ) : (
-                        <div className="showcase-accent-panel" aria-hidden="true"></div>
+                        <div className="showcase-placeholder" role="img" aria-label={item.alt || "Placeholder image"}>
+                          <span>PLACEHOLDER</span>
+                        </div>
                       )}
                     </div>
 

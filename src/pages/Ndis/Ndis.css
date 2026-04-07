@@ -12,7 +12,8 @@
 }
 
 .ndis-hero .content-container {
-  text-align: center;
+  max-width: var(--page-width);
+  text-align: left;
 }
 
 .ndis-hero h1 {
@@ -22,6 +23,7 @@
   font-weight: var(--hero-title-weight);
   letter-spacing: 0.04em;
   line-height: 1;
+  text-align: left;
 }
 
 .ndis-overview {
@@ -29,7 +31,7 @@
 }
 
 .ndis-overview-grid {
-  max-width: 1040px;
+  max-width: var(--page-width);
   display: grid;
   grid-template-columns: 1fr 0.92fr;
   gap: 34px;
@@ -134,6 +136,10 @@
   font-size: 1.05rem;
   font-weight: 700;
   margin-bottom: 26px;
+}
+
+.ndis-testimonials .content-container {
+  max-width: var(--page-width);
 }
 
 .ndis-testimonial-row {

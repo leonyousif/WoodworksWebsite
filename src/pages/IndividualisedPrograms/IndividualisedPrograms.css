@@ -43,7 +43,8 @@
 }
 
 .individualised-hero .content-container {
-  text-align: center;
+  max-width: var(--page-width);
+  text-align: left;
 }
 
 .individualised-hero h1 {
@@ -53,6 +54,7 @@
   font-weight: var(--hero-title-weight);
   letter-spacing: 0.04em;
   line-height: 1;
+  text-align: left;
 }
 
 .individualised-intro {
@@ -60,7 +62,7 @@
 }
 
 .intro-narrow {
-  max-width: 980px;
+  max-width: var(--copy-width);
 }
 
 .individualised-intro h2,
@@ -84,13 +86,13 @@
 }
 
 .individualised-showcase .content-container {
-  max-width: 980px;
+  max-width: var(--copy-width);
 }
 
 .showcase-frame {
   display: grid;
   grid-template-columns: auto 1fr auto;
-  align-items: center;
+  align-items: start;
   gap: 10px;
 }
 
@@ -106,6 +108,8 @@
   line-height: 1;
   cursor: pointer;
   padding: 0;
+  align-self: start;
+  margin-top: 88px;
 }
 
 .showcase-grid {
@@ -127,10 +131,29 @@
   object-fit: cover;
 }
 
-.showcase-accent-panel {
+.showcase-accent-panel,
+.showcase-placeholder {
   width: 100%;
   height: 100%;
+}
+
+.showcase-accent-panel {
   background: #815330;
+}
+
+.showcase-placeholder {
+  background: #f6f2ec;
+  border: 2px dashed rgba(124, 101, 82, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcase-placeholder span {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #b08b6d;
+  letter-spacing: 0.08em;
 }
 
 .showcase-card blockquote {

@@ -6,6 +6,7 @@ function FeatureSection({
   text,
   imageAlt,
   imageSrc,
+  imagePlaceholder = false,
   buttonText,
   buttonLink,
   imageLeft = false,
@@ -13,6 +14,9 @@ function FeatureSection({
 }) {
   const buttonClassName = `intro-button ${missionStyle ? "mission-button" : ""}`;
   const isInternalLink = buttonLink?.startsWith("/");
+  const handleInternalClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <section className={`intro-section ${missionStyle ? "mission-section" : ""}`}>
@@ -30,11 +34,17 @@ function FeatureSection({
 
           <div className="intro-image-column">
             <div className="intro-image-frame">
-              <img className="intro-image" src={imageSrc} alt={imageAlt} />
+              {imagePlaceholder ? (
+                <div className="content-image-placeholder" role="img" aria-label={imageAlt}>
+                  <span>PLACEHOLDER</span>
+                </div>
+              ) : (
+                <img className="intro-image" src={imageSrc} alt={imageAlt} />
+              )}
             </div>
 
             {buttonText && isInternalLink && (
-              <Link to={buttonLink} className={buttonClassName}>
+              <Link to={buttonLink} className={buttonClassName} onClick={handleInternalClick}>
                 {buttonText}
               </Link>
             )}

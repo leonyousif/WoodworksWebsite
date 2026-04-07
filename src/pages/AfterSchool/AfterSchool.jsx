@@ -1,9 +1,7 @@
 import "./AfterSchool.css";
-import { Link } from "react-router-dom";
-
 import SiteHeader from "../../shared/components/SiteHeader/SiteHeader";
+import ContactCta from "../../shared/components/ContactCta/ContactCta";
 import heroImage from "../../assets/hero.png";
-import logo from "../../img/woodwords logo.jpg";
 
 function AfterSchool() {
   const supports = [
@@ -34,7 +32,7 @@ function AfterSchool() {
         <section className="afterschool-overview">
           <div className="content-container afterschool-overview-grid">
             <div className="afterschool-placeholder-card">
-              <span>placeholder image</span>
+              <span>PLACEHOLDER</span>
             </div>
 
             <div className="afterschool-intro-copy">
@@ -62,25 +60,15 @@ function AfterSchool() {
             </div>
 
             <div className="afterschool-placeholder-card afterschool-placeholder-offset">
-              <span>placeholder image</span>
+              <span>PLACEHOLDER</span>
             </div>
           </div>
         </section>
 
         <section className="afterschool-supports">
           <div className="content-container">
-            <h2>Our after school program may support:</h2>
-
-            <div className="afterschool-support-grid">
-              {supports.map((item, index) => (
-                <article className="afterschool-support-card" key={item}>
-                  <span className="afterschool-support-icon" aria-hidden="true">
-                    {index + 1}
-                  </span>
-
-                  <p>{item}</p>
-                </article>
-              ))}
+            <div className="afterschool-supports-placeholder">
+              <span>PLACEHOLDER</span>
             </div>
           </div>
         </section>
@@ -102,73 +90,12 @@ function AfterSchool() {
             </div>
 
             <div className="afterschool-wide-placeholder">
-              <span>placeholder image</span>
+              <span>PLACEHOLDER</span>
             </div>
           </div>
         </section>
 
-        <section className="afterschool-contact">
-          <div className="content-container">
-            <div className="afterschool-contact-copy">
-              <h3>SEE WHAT YOU COULD ACHIEVE</h3>
-
-              <div className="afterschool-contact-block">
-                <h4>Contact us here</h4>
-                <p>
-                  We&apos;re here to help you with any questions. Reach out to
-                  us for program details or to discuss how we can support you.
-                </p>
-              </div>
-
-              <div className="afterschool-contact-block">
-                <h4>Email us</h4>
-                <p>We&apos;d love to hear from you.</p>
-                <Link to="/contact" className="afterschool-contact-link">
-                  Use the contact form
-                </Link>
-              </div>
-
-              <div className="afterschool-contact-block">
-                <h4>Call us</h4>
-                <p>Connect with us directly.</p>
-                <p>0414 481 947</p>
-              </div>
-
-              <div className="afterschool-contact-block">
-                <h4>Our location</h4>
-                <p>9 Glenroy Crescent, St Johns Park, 2176, NSW</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <footer className="afterschool-footer">
-          <div className="content-container afterschool-footer-inner">
-            <img
-              className="afterschool-footer-logo"
-              src={logo}
-              alt="Woodworks logo"
-            />
-
-            <div className="afterschool-footer-socials" aria-label="Social links">
-              <a href="#" aria-label="Facebook">
-                f
-              </a>
-              <a href="#" aria-label="Instagram">
-                ig
-              </a>
-            </div>
-
-            <div
-              className="afterschool-footer-partners"
-              aria-label="Partner organisations"
-            >
-              <span>abi services</span>
-              <span>aspect</span>
-              <span>Brain Injury Matters</span>
-            </div>
-          </div>
-        </footer>
+        <ContactCta smallHeading="SEE WHAT YOU COULD ACHIEVE" />
       </main>
     </div>
   );

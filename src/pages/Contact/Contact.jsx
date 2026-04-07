@@ -26,24 +26,43 @@ function Contact() {
       </section>
 
       <main>
+        <section className="contact-intro-strip">
+          <div className="content-container">
+            <p>
+              We&apos;d love to hear from you. Whether you&apos;re a participant,
+              parent, or support coordinator, feel free to reach out to discuss
+              how Woodworks can support you.
+            </p>
+          </div>
+        </section>
+
         <section className="contact-info-section">
           <div className="content-container contact-grid">
             <div className="contact-cards">
               <div className="contact-card">
-                <h3>Email Us</h3>
-                <a className="contact-card-link" href="#contact-form">
-                  Use the contact form below
-                </a>
+                <div className="contact-card-icon" aria-hidden="true">MAIL</div>
+                <div className="contact-card-copy">
+                  <h3>Email Us</h3>
+                  <a className="contact-card-link" href="#contact-form">
+                    Use the contact form below
+                  </a>
+                </div>
               </div>
 
               <div className="contact-card">
-                <h3>Call Us</h3>
-                <p>0414 481 947</p>
+                <div className="contact-card-icon" aria-hidden="true">CALL</div>
+                <div className="contact-card-copy">
+                  <h3>Call Us</h3>
+                  <p>0414 481 947</p>
+                </div>
               </div>
 
               <div className="contact-card">
-                <h3>Find Us</h3>
-                <p>9 Glenroy Crescent, St Johns Park, NSW</p>
+                <div className="contact-card-icon" aria-hidden="true">MAP</div>
+                <div className="contact-card-copy">
+                  <h3>Find Us</h3>
+                  <p>9 Glenroy Crescent, St Johns Park, NSW</p>
+                </div>
               </div>
             </div>
 
@@ -68,13 +87,8 @@ function Contact() {
           <div className="content-container">
             <div className="cta-box" id="contact-form">
               <div className="contact-form-heading">
-                <h2>Email Us</h2>
                 <p>
-                  We&apos;d love to hear from you. Send us a message and
-                  we&apos;ll get back to you as soon as we can.
-                </p>
-                <p className="contact-form-email">
-                  Use the form below and we&apos;ll get back to you as soon as we can.
+                  Send us a message and we&apos;ll get back to you as soon as we can.
                 </p>
               </div>
 

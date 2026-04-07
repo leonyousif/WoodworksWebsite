@@ -11,39 +11,12 @@
   --card-border: rgba(111, 99, 87, 0.22);
 }
 
-.home-page .top-header-accent {
-  background: var(--home-brown);
-}
-
-.home-page .top-brand-logo-link {
-  border-right-color: rgba(111, 99, 87, 0.5);
-}
-
-.home-page .top-nav-row {
-  border-top-color: rgba(111, 99, 87, 0.2);
-}
-
-.home-page .top-nav a:hover,
-.home-page .contact-inline-link {
-  color: var(--home-brown);
-}
-
 .home-page .intro-button {
   color: #f7511f;
 }
 
-.home-page .cater-button {
-  background: var(--home-brown);
-  color: var(--text-light);
-}
-
 .home-page .intro-button:hover {
   color: var(--text-light);
-}
-
-.home-page .cater-button:hover {
-  background: var(--home-brown);
-  opacity: 0.92;
 }
 
 .home-page .practice-section,
@@ -80,10 +53,6 @@ main {
 }
 
 @media (max-width: 768px) {
-  .home-page .top-brand-logo-link {
-    border-bottom-color: rgba(111, 99, 87, 0.4);
-  }
-
   .content-container {
     width: min(var(--container), calc(100% - 32px));
   }

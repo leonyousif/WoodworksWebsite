@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Canva Sans";
+  src: url("/fonts/Canva-Sans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 .content-container {
   width: min(var(--container), calc(100% - 48px));
   margin: 0 auto;
@@ -16,6 +24,7 @@
 }
 
 :root {
+  --font-sans: "Canva Sans", "Canva-Sans-Regular", "CanvaSans", "Aptos", "Segoe UI", Arial, Helvetica, sans-serif;
   --bg-page: #f1ece5;
   --bg-light: #f8f4ef;
   --bg-white: #fffdf9;
@@ -38,6 +47,8 @@
   --hero-title-weight: 700;
 
   --container: 1120px;
+  --page-width: 1040px;
+  --copy-width: 980px;
 }
 
 
@@ -47,7 +58,7 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
   background: var(--bg-page);
   color: var(--text-dark);
   line-height: 1.5;

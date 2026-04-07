@@ -6,8 +6,6 @@ import HeroBanner from "./components/HeroBanner/HeroBanner";
 import FeatureSection from "./components/FeatureSection/FeatureSection";
 import WorkshopActivities from "./components/WorkshopActivities/WorkshopActivities";
 import SupportPrograms from "./components/SupportPrograms/SupportPrograms";
-import alexImage from "../../img/alex sanding.jpg";
-import dadImage from "../../img/dad.jpg";
 
 function Home() {
   return (
@@ -32,7 +30,7 @@ Our experienced and supportive team is dedicated to helping each participant lea
 
 At Woodworks we like to say that the projects, are as individual and unique, as the people that made them.`}
           imageAlt="Who we are"
-          imageSrc={alexImage}
+          imagePlaceholder={true}
           buttonText="COME MEET THE TEAM"
           buttonLink="/about"
           imageLeft={false}
@@ -42,7 +40,7 @@ At Woodworks we like to say that the projects, are as individual and unique, as 
           title="OUR MISSION"
           text={`To support people with disability to discover their potential through woodworking. In a safe and inclusive workshop, participants are empowered to build practical skills, confidence, and independence while developing capacity, exercising choice, and engaging in meaningful social and community participation.`}
           imageAlt="Our mission"
-          imageSrc={dadImage}
+          imagePlaceholder={true}
           buttonText="Learn more about our individualised programs"
           buttonLink="/individualised-programs"
           imageLeft={true}

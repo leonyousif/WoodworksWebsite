@@ -12,6 +12,7 @@
 }
 
 .icare-hero .content-container {
+  max-width: var(--page-width);
   text-align: left;
 }
 
@@ -29,7 +30,7 @@
 }
 
 .icare-overview-layout {
-  max-width: 1040px;
+  max-width: var(--page-width);
 }
 
 .icare-overview-top,
@@ -145,7 +146,7 @@
 }
 
 .icare-testimonials .content-container {
-  max-width: 1040px;
+  max-width: var(--page-width);
 }
 
 .icare-testimonials h2 {
@@ -309,7 +310,7 @@
 }
 
 .icare-contact .content-container {
-  max-width: 1040px;
+  max-width: var(--page-width);
 }
 
 .icare-contact-copy {
