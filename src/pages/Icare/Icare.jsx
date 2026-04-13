@@ -1,12 +1,38 @@
 import "./Icare.css";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import SiteHeader from "../../shared/components/SiteHeader/SiteHeader";
 import ContactCta from "../../shared/components/ContactCta/ContactCta";
 import heroImage from "../../assets/hero.png";
+import iCareOverviewImage from "../../img/icare-overview.jpeg";
 
 function Icare() {
-  const dots = Array.from({ length: 5 });
+  const testimonials = [
+    {
+      paragraphs: [
+        "In my professional experience as a Recreation Therapist, Woodworks at St Johns Park provides a safe and supportive environment for individuals to return to woodworking following injury. Under the guidance of an experienced vocational instructor specialising in woodwork, participants are supported to re-engage in meaningful, skill-based activity aligned with their rehabilitation goals.",
+        "The program effectively encourages the use of affected limbs where appropriate and adapts tasks to suit individual abilities, promoting functional recovery in a practical and engaging way. It also offers a valuable social space, where participants can connect with others who share similar interests and experiences, fostering confidence, connection, and overall wellbeing.",
+        "Overall, this is a well-structured and therapeutically beneficial program that integrates rehabilitation with meaningful occupation.",
+      ],
+      attribution: ["Amanda Vizas", "Senior Recreation Therapist and Director"],
+    },
+  ];
+
+  const [activeTestimonial, setActiveTestimonial] = useState(0);
+  const currentTestimonial = testimonials[activeTestimonial];
+
+  const showPreviousTestimonial = () => {
+    setActiveTestimonial((current) =>
+      current === 0 ? testimonials.length - 1 : current - 1
+    );
+  };
+
+  const showNextTestimonial = () => {
+    setActiveTestimonial((current) =>
+      current === testimonials.length - 1 ? 0 : current + 1
+    );
+  };
 
   return (
     <div className="icare-page">
@@ -28,9 +54,11 @@ function Icare() {
           <div className="content-container icare-overview-layout">
             <div className="icare-overview-top">
               <div className="icare-overview-image-card">
-                <div className="icare-image-placeholder" role="img" aria-label="Placeholder image">
-                  <span>PLACEHOLDER</span>
-                </div>
+                <img
+                  className="icare-overview-image"
+                  src={iCareOverviewImage}
+                  alt="Participant working on a woodworking machine in the Woodworks workshop"
+                />
               </div>
 
               <div className="icare-intro-copy">
@@ -85,7 +113,12 @@ function Icare() {
             <h2>SUPPORT COORDINATOR TESTIMONIALS</h2>
 
             <div className="icare-testimonial-row">
-              <button className="icare-arrow" type="button" aria-label="Previous testimonial">
+              <button
+                className="icare-arrow"
+                type="button"
+                aria-label="Previous testimonial"
+                onClick={showPreviousTestimonial}
+              >
                 &#10094;
               </button>
 
@@ -98,17 +131,39 @@ function Icare() {
                 </div>
 
                 <div className="icare-testimonial-box">
-                  <p>PLACEHOLDER</p>
+                  <div className="icare-testimonial-copy">
+                    {currentTestimonial.paragraphs.map((paragraph) => (
+                      <p key={paragraph}>{paragraph}</p>
+                    ))}
+
+                    <footer className="icare-testimonial-attribution">
+                      {currentTestimonial.attribution.map((line) => (
+                        <span key={line}>{line}</span>
+                      ))}
+                    </footer>
+                  </div>
                 </div>
 
                 <div className="icare-testimonial-dots" aria-label="Testimonial slides">
-                  {dots.map((_, index) => (
-                    <span key={index} className={index === 0 ? "active" : ""}></span>
+                  {testimonials.map((_, index) => (
+                    <button
+                      key={index}
+                      type="button"
+                      className={`icare-testimonial-dot ${index === activeTestimonial ? "active" : ""}`}
+                      aria-label={`Show testimonial ${index + 1}`}
+                      aria-pressed={index === activeTestimonial}
+                      onClick={() => setActiveTestimonial(index)}
+                    ></button>
                   ))}
                 </div>
               </div>
 
-              <button className="icare-arrow" type="button" aria-label="Next testimonial">
+              <button
+                className="icare-arrow"
+                type="button"
+                aria-label="Next testimonial"
+                onClick={showNextTestimonial}
+              >
                 &#10095;
               </button>
             </div>

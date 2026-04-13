@@ -6,6 +6,8 @@ import HeroBanner from "./components/HeroBanner/HeroBanner";
 import FeatureSection from "./components/FeatureSection/FeatureSection";
 import WorkshopActivities from "./components/WorkshopActivities/WorkshopActivities";
 import SupportPrograms from "./components/SupportPrograms/SupportPrograms";
+import whoWeAreImage from "../../img/home-who-we-are.jpg";
+import ourMissionImage from "../../img/home-our-mission.jpg";
 
 function Home() {
   return (
@@ -29,8 +31,8 @@ In a safe and supportive environment, participants use woodworking skills to wor
 Our experienced and supportive team is dedicated to helping each participant learn, grow, and feel proud of what they have achieved.
 
 At Woodworks we like to say that the projects, are as individual and unique, as the people that made them.`}
-          imageAlt="Who we are"
-          imagePlaceholder={true}
+          imageAlt="Participant working on a woodworking project in the Woodworks workshop"
+          imageSrc={whoWeAreImage}
           buttonText="COME MEET THE TEAM"
           buttonLink="/about"
           imageLeft={false}
@@ -39,8 +41,8 @@ At Woodworks we like to say that the projects, are as individual and unique, as 
         <FeatureSection
           title="OUR MISSION"
           text={`To support people with disability to discover their potential through woodworking. In a safe and inclusive workshop, participants are empowered to build practical skills, confidence, and independence while developing capacity, exercising choice, and engaging in meaningful social and community participation.`}
-          imageAlt="Our mission"
-          imagePlaceholder={true}
+          imageAlt="Woodworks participants shaping a woodworking project together in the workshop"
+          imageSrc={ourMissionImage}
           buttonText="Learn more about our individualised programs"
           buttonLink="/individualised-programs"
           imageLeft={true}

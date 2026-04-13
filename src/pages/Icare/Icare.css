@@ -26,19 +26,19 @@
 }
 
 .icare-overview {
-  padding: 18px 0 34px;
+  padding: 24px 0 34px;
 }
 
 .icare-overview-layout {
-  max-width: var(--page-width);
+  max-width: 980px;
 }
 
 .icare-overview-top,
 .icare-overview-bottom {
   display: grid;
-  grid-template-columns: 0.82fr 1.18fr;
-  gap: 30px;
-  align-items: start;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: center;
 }
 
 .icare-overview-bottom {
@@ -47,10 +47,21 @@
 
 .icare-overview-image-card {
   overflow: hidden;
+  aspect-ratio: 1 / 1;
+  min-height: 240px;
+  width: min(100%, 320px);
+}
+
+.icare-overview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .icare-image-placeholder {
-  min-height: 380px;
+  aspect-ratio: 1 / 1;
+  min-height: 280px;
   background: #f6f2ec;
   border: 2px dashed rgba(124, 101, 82, 0.45);
   display: flex;
@@ -66,16 +77,16 @@
 }
 
 .icare-intro-copy {
-  padding: 18px 24px 0;
-  text-align: center;
+  padding: 10px 12px 0;
+  text-align: left;
 }
 
 .icare-intro-copy p {
-  max-width: 560px;
-  margin: 0 auto;
+  max-width: 640px;
+  margin: 0;
   color: var(--text-dark);
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .icare-intro-copy p + p {
@@ -274,15 +285,32 @@
   border: 2px dashed rgba(124, 101, 82, 0.45);
   background: #f6f2ec;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
+  padding: 24px 28px;
 }
 
-.icare-testimonial-box p {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: #b08b6d;
-  letter-spacing: 0.08em;
+.icare-testimonial-copy {
+  width: 100%;
+  color: var(--text-dark);
+}
+
+.icare-testimonial-copy p {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.icare-testimonial-copy p + p {
+  margin-top: 18px;
+}
+
+.icare-testimonial-attribution {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 22px;
+  font-style: italic;
 }
 
 .icare-testimonial-dots {
@@ -292,16 +320,55 @@
   margin-bottom: 18px;
 }
 
-.icare-testimonial-dots span {
+.icare-testimonial-dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
+  border: none;
   background: var(--text-dark);
   opacity: 0.35;
+  padding: 0;
+  cursor: pointer;
 }
 
-.icare-testimonial-dots span.active {
+.icare-testimonial-dot.active {
   opacity: 1;
+}
+
+@media (max-width: 960px) {
+  .icare-overview-layout {
+    max-width: 100%;
+  }
+
+  .icare-overview-top,
+  .icare-overview-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .icare-overview-top,
+  .icare-overview-bottom,
+  .icare-intro-copy,
+  .icare-progress-copy,
+  .icare-placeholder-card {
+    padding: 0;
+  }
+
+  .icare-overview-image {
+    max-height: 300px;
+    min-height: 240px;
+  }
+
+  .icare-intro-copy {
+    text-align: left;
+  }
+
+  .icare-testimonial-row {
+    grid-template-columns: 1fr;
+  }
+
+  .icare-arrow {
+    font-size: 3rem;
+  }
 }
 
 .icare-contact {

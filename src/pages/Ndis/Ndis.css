@@ -261,16 +261,28 @@
   border: 2px dashed rgba(124, 101, 82, 0.45);
   background: #f6f2ec;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   text-align: center;
+  padding: 24px 28px;
 }
 
-.ndis-testimonial-box p {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: #b08b6d;
-  letter-spacing: 0.08em;
+.ndis-testimonial-copy {
+  width: 100%;
+  color: var(--text-dark);
+}
+
+.ndis-testimonial-copy p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.ndis-testimonial-attribution {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 18px;
+  font-weight: 500;
 }
 
 .ndis-testimonial-dots {
@@ -280,15 +292,18 @@
   margin-bottom: 18px;
 }
 
-.ndis-testimonial-dots span {
+.ndis-testimonial-dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
+  border: none;
   background: var(--text-dark);
   opacity: 0.35;
+  padding: 0;
+  cursor: pointer;
 }
 
-.ndis-testimonial-dots span.active {
+.ndis-testimonial-dot.active {
   opacity: 1;
 }
 

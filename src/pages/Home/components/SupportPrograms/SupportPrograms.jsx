@@ -1,5 +1,7 @@
 import "./SupportPrograms.css";
 import { Link } from "react-router-dom";
+import ndisSupportImage from "../../../../img/support-ndis.jpg";
+import iCareSupportImage from "../../../../img/support-icare.jpg";
 
 function SupportPrograms() {
   const scrollToTop = () => {
@@ -13,9 +15,11 @@ function SupportPrograms() {
 
         <div className="cater-for-grid">
           <div className="cater-card">
-            <div className="cater-image-placeholder" role="img" aria-label="NDIS woodworking support placeholder">
-              <span>PLACEHOLDER</span>
-            </div>
+            <img
+              className="cater-image"
+              src={ndisSupportImage}
+              alt="Participant using a drill press during a woodworking activity"
+            />
             <Link to="/ndis" className="cater-button" onClick={scrollToTop}>
               Learn more NDIS
             </Link>
@@ -30,9 +34,11 @@ function SupportPrograms() {
           </div>
 
           <div className="cater-card">
-            <div className="cater-image-placeholder" role="img" aria-label="ICARE woodworking support placeholder">
-              <span>PLACEHOLDER</span>
-            </div>
+            <img
+              className="cater-image"
+              src={iCareSupportImage}
+              alt="Participants working together on a woodworking project in the workshop"
+            />
             <Link to="/icare" className="cater-button" onClick={scrollToTop}>
               Learn more ICARE
             </Link>

@@ -79,7 +79,14 @@
   margin-bottom: 14px;
 }
 
-.practice-slide-content p {
+.practice-slide-list {
+  margin: 0;
+  padding-left: 1.5rem;
+  text-align: left;
+  display: inline-block;
+}
+
+.practice-slide-list li {
   font-size: 1.1rem;
   font-weight: 700;
   line-height: 1.5;
@@ -92,14 +99,17 @@
   margin-top: 16px;
 }
 
-.practice-dots span {
+.practice-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
+  border: none;
   background: rgba(255, 255, 255, 0.55);
+  padding: 0;
+  cursor: pointer;
 }
 
-.practice-dots span.active {
+.practice-dot.active {
   background: white;
 }
 
@@ -124,7 +134,7 @@
     font-size: 1.8rem;
   }
 
-  .practice-slide-content p {
+  .practice-slide-list li {
     font-size: 0.98rem;
   }
 

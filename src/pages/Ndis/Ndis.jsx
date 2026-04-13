@@ -1,4 +1,5 @@
 import "./Ndis.css";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import SiteHeader from "../../shared/components/SiteHeader/SiteHeader";
@@ -11,7 +12,38 @@ function Ndis() {
     "Core Supports - Assistance with Social and Community Participation",
   ];
 
-  const dots = Array.from({ length: 5 });
+  const testimonials = [
+    {
+      quote:
+        "Jenny and Paul have created something really special at Woodworks. Their passion, care, and commitment make a lasting impact on everyone who walks through their doors.",
+      attribution: ["Support Worker Jayda"],
+    },
+    {
+      quote:
+        "My son has been on his woodworking journey for over three years now. The knowledge he has gained is truly beyond words. He has progressed from basics to confidently using a wide range of tools and completing projects independently. Jenny and Paul are incredibly dedicated; they go above and beyond to support each individual and help them reach their full potential. We are truly blessed to have met the woodworks team.",
+      attribution: ["Monica"],
+    },
+    {
+      quote:
+        "It’s the atmosphere and diversity of each person to achieve outcomes and develop skills",
+      attribution: ["Craig", "Lioness care Support services"],
+    },
+  ];
+
+  const [activeTestimonial, setActiveTestimonial] = useState(0);
+  const currentTestimonial = testimonials[activeTestimonial];
+
+  const showPreviousTestimonial = () => {
+    setActiveTestimonial((current) =>
+      current === 0 ? testimonials.length - 1 : current - 1
+    );
+  };
+
+  const showNextTestimonial = () => {
+    setActiveTestimonial((current) =>
+      current === testimonials.length - 1 ? 0 : current + 1
+    );
+  };
 
   return (
     <div className="ndis-page">
@@ -78,7 +110,12 @@ function Ndis() {
             <h2>TESTIMONIALS</h2>
 
             <div className="ndis-testimonial-row">
-              <button className="ndis-arrow" type="button" aria-label="Previous testimonial">
+              <button
+                className="ndis-arrow"
+                type="button"
+                aria-label="Previous testimonial"
+                onClick={showPreviousTestimonial}
+              >
                 &#10094;
               </button>
 
@@ -91,17 +128,37 @@ function Ndis() {
                 </div>
 
                 <div className="ndis-testimonial-box">
-                  <p>PLACEHOLDER</p>
+                  <div className="ndis-testimonial-copy">
+                    <p>&ldquo;{currentTestimonial.quote}&rdquo;</p>
+
+                    <footer className="ndis-testimonial-attribution">
+                      {currentTestimonial.attribution.map((line) => (
+                        <span key={line}>{line}</span>
+                      ))}
+                    </footer>
+                  </div>
                 </div>
 
                 <div className="ndis-testimonial-dots" aria-label="Testimonial slides">
-                  {dots.map((_, index) => (
-                    <span key={index} className={index === 0 ? "active" : ""}></span>
+                  {testimonials.map((_, index) => (
+                    <button
+                      key={index}
+                      type="button"
+                      className={`ndis-testimonial-dot ${index === activeTestimonial ? "active" : ""}`}
+                      aria-label={`Show testimonial ${index + 1}`}
+                      aria-pressed={index === activeTestimonial}
+                      onClick={() => setActiveTestimonial(index)}
+                    ></button>
                   ))}
                 </div>
               </div>
 
-              <button className="ndis-arrow" type="button" aria-label="Next testimonial">
+              <button
+                className="ndis-arrow"
+                type="button"
+                aria-label="Next testimonial"
+                onClick={showNextTestimonial}
+              >
                 &#10095;
               </button>
             </div>

@@ -68,7 +68,7 @@
 }
 
 .about-story {
-  max-width: 720px;
+  max-width: none;
 }
 
 .about-story p,
@@ -122,7 +122,7 @@
 }
 
 .about-team-intro {
-  max-width: 720px;
+  max-width: none;
   margin: 0 0 20px;
 }
 
@@ -158,91 +158,18 @@
 }
 
 .about-team-portrait {
-  position: relative;
   width: 118px;
   height: 118px;
   border-radius: 50%;
   overflow: hidden;
   justify-self: start;
-  background: linear-gradient(180deg, #a8d8ff 0%, #d6efff 58%, #f4f7de 58%, #eef3d5 100%);
   border: 4px solid #184dff;
 }
 
-.about-team-portrait-cloud {
-  position: absolute;
-  background: #ffffff;
-  border-radius: 999px;
-}
-
-.about-team-portrait-cloud::before,
-.about-team-portrait-cloud::after {
-  content: "";
-  position: absolute;
-  background: #ffffff;
-  border-radius: 50%;
-}
-
-.about-team-portrait-cloud-one {
-  width: 34px;
-  height: 16px;
-  top: 18px;
-  left: 28px;
-}
-
-.about-team-portrait-cloud-one::before {
-  width: 16px;
-  height: 16px;
-  left: 3px;
-  top: -7px;
-}
-
-.about-team-portrait-cloud-one::after {
-  width: 18px;
-  height: 18px;
-  right: 2px;
-  top: -9px;
-}
-
-.about-team-portrait-cloud-two {
-  width: 24px;
-  height: 12px;
-  top: 28px;
-  left: 54px;
-}
-
-.about-team-portrait-cloud-two::before {
-  width: 12px;
-  height: 12px;
-  left: 2px;
-  top: -5px;
-}
-
-.about-team-portrait-cloud-two::after {
-  width: 13px;
-  height: 13px;
-  right: 0;
-  top: -6px;
-}
-
-.about-team-portrait-hill {
-  position: absolute;
-  border-radius: 50%;
-}
-
-.about-team-portrait-hill-back {
-  width: 112px;
-  height: 46px;
-  left: 10px;
-  bottom: 14px;
-  background: #c3db6a;
-}
-
-.about-team-portrait-hill-front {
-  width: 118px;
-  height: 48px;
-  left: -8px;
-  bottom: -10px;
-  background: #85a900;
+.about-team-portrait-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .about-team-copy p {

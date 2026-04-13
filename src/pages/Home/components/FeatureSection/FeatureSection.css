@@ -116,8 +116,13 @@
   padding-top: 8px;
 }
 
+.mission-section .intro-inner {
+  align-items: center;
+}
+
 .mission-section .intro-text-column {
   align-items: flex-end;
+  transform: translateY(-14px);
 }
 
 .mission-section .intro-text {
@@ -187,6 +192,7 @@
 
   .mission-section .intro-text-column {
     align-items: center;
+    transform: none;
   }
 
   .mission-section .intro-text {

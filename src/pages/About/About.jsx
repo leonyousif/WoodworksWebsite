@@ -2,6 +2,9 @@ import "./About.css";
 import SiteHeader from "../../shared/components/SiteHeader/SiteHeader";
 import ContactCta from "../../shared/components/ContactCta/ContactCta";
 import heroImage from "../../assets/hero.png";
+import paulPortrait from "../../img/about-paul.jpeg";
+import jennyPortrait from "../../img/about-jenny.jpeg";
+import alysePortrait from "../../img/about-alyse.jpeg";
 
 function About() {
   const storyParagraphs = [
@@ -31,18 +34,21 @@ function About() {
       role: "Co-Founder of Woodworks",
       bio: "I run the day-to-day workshop. I'm a practical, hands-on person, and I use my carpentry skills to work alongside participants and support them in each session. After a fall from a roof earlier in my life, I developed a real understanding of physical limitations and recovery, which led me to work in the brain injury unit at Liverpool Hospital for 17 years. That experience showed me how much the right environment and meaningful activity can build skills, confidence, and wellbeing.",
       imageSide: "left",
+      imageSrc: paulPortrait,
     },
     {
       name: "Jenny",
       role: "Co-Founder and Program Coordinator at Woodworks",
       bio: "I was a teacher for 30 years, and that experience shapes the way I support people - with patience and an understanding that everyone learns differently. I develop and coordinate the program, making sure sessions are tailored to each person's individual needs, while also working alongside participants on the workshop floor. I try to be patient and meet people where they're at, creating a space where people feel comfortable, supported, and able to build skills over time - while having fun and building a strong sense of team and community.",
       imageSide: "right",
+      imageSrc: jennyPortrait,
     },
     {
       name: "Alyse",
       role: "a support worker at Woodworks",
       bio: "I work alongside Paul and Jenny in the workshop. I've been a support worker for three years and have been volunteering with Woodworks since it began in 2022, so I've been part of the journey from the start. I'm involved in the day-to-day sessions, supporting participants as they build skills and work on their projects. I bring a positive, energetic approach and have a genuine heart for helping people feel comfortable, included, and supported as they learn and have a go.",
       imageSide: "left",
+      imageSrc: alysePortrait,
     },
   ];
 
@@ -100,11 +106,12 @@ function About() {
                   className={`about-team-row about-team-row-${member.imageSide}`}
                   key={member.name}
                 >
-                  <div className="about-team-portrait" aria-hidden="true">
-                    <div className="about-team-portrait-cloud about-team-portrait-cloud-one"></div>
-                    <div className="about-team-portrait-cloud about-team-portrait-cloud-two"></div>
-                    <div className="about-team-portrait-hill about-team-portrait-hill-back"></div>
-                    <div className="about-team-portrait-hill about-team-portrait-hill-front"></div>
+                  <div className="about-team-portrait">
+                    <img
+                      className="about-team-portrait-image"
+                      src={member.imageSrc}
+                      alt={`${member.name} portrait`}
+                    />
                   </div>
 
                   <div className="about-team-copy">
