@@ -1,6 +1,11 @@
 import "./ContactCta.css";
 import { Link } from "react-router-dom";
 import logo from "../../../img/woodwords logo.jpg";
+import brainInjuryMattersLogo from "../../../img/brain-injury-matters.png";
+import instagramLogo from "../../../img/instagram.png";
+import facebookLogo from "../../../img/facebook.png";
+import disabilityGatewayLogo from "../../../img/disability-gateway.jpg";
+import autismSpectrumAustraliaLogo from "../../../img/autism-spectrum-australia.jpg";
 
 function ContactCta({ smallHeading = "THE WORKSHOP IS WAITING..." }) {
   const mapQuery = encodeURIComponent(
@@ -56,14 +61,68 @@ function ContactCta({ smallHeading = "THE WORKSHOP IS WAITING..." }) {
           <img className="footer-logo" src={logo} alt="Woodworks logo" />
 
           <div className="footer-socials">
-            <div className="social-circle">f</div>
-            <div className="social-circle">ig</div>
+            <a
+              href="https://www.facebook.com/woodworksskillsbuildingworkshop"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Visit Woodworks on Facebook"
+            >
+              <img
+                className="social-icon social-icon-facebook"
+                src={facebookLogo}
+                alt="Facebook"
+              />
+            </a>
+            <img
+              className="social-icon social-icon-instagram"
+              src={instagramLogo}
+              alt="Instagram"
+            />
           </div>
 
           <div className="footer-partners">
-            <div className="partner-box">abi</div>
-            <div className="partner-box">aspect</div>
-            <div className="partner-box">Brain Injury Matters</div>
+            <div className="partner-box">
+              <a
+                href="https://www.disabilitygateway.gov.au/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Visit Disability Gateway"
+              >
+                <img
+                  className="partner-logo"
+                  src={disabilityGatewayLogo}
+                  alt="Disability Gateway"
+                />
+              </a>
+            </div>
+            <div className="partner-box">
+              <a
+                href="https://www.aspect.org.au/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Visit Autism Spectrum Australia"
+              >
+                <img
+                  className="partner-logo"
+                  src={autismSpectrumAustraliaLogo}
+                  alt="Autism Spectrum Australia"
+                />
+              </a>
+            </div>
+            <div className="partner-box">
+              <a
+                href="https://www.braininjurymatters.org/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Visit Brain Injury Matters"
+              >
+                <img
+                  className="partner-logo"
+                  src={brainInjuryMattersLogo}
+                  alt="Brain Injury Matters"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
