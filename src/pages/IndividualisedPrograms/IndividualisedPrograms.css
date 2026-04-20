@@ -35,7 +35,7 @@
 }
 
 .individualised-hero {
-  min-height: 260px;
+  min-height: 288px;
   display: flex;
   align-items: center;
   background-position: center;
@@ -393,7 +393,7 @@
   }
 
   .individualised-hero {
-    min-height: 210px;
+    min-height: 242px;
   }
 
   .individualised-intro {

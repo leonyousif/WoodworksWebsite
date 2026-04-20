@@ -1,7 +1,7 @@
 import "./About.css";
 import SiteHeader from "../../shared/components/SiteHeader/SiteHeader";
 import ContactCta from "../../shared/components/ContactCta/ContactCta";
-import heroImage from "../../assets/hero.png";
+import heroImage from "../../assets/hero-afterschool.jpeg";
 import paulPortrait from "../../img/about-paul.jpeg";
 import jennyPortrait from "../../img/about-jenny.jpeg";
 import alysePortrait from "../../img/about-alyse.jpeg";
@@ -58,7 +58,7 @@ function About() {
 
       <section
         className="about-hero-banner"
-        style={{ backgroundImage: `linear-gradient(rgba(47, 34, 21, 0.42), rgba(47, 34, 21, 0.42)), url(${heroImage})` }}
+        style={{ backgroundImage: `linear-gradient(rgba(88, 88, 88, 0.42), rgba(88, 88, 88, 0.42)), url(${heroImage})` }}
       >
         <div className="about-hero-overlay">
           <div className="content-container">

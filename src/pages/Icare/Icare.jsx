@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 
 import SiteHeader from "../../shared/components/SiteHeader/SiteHeader";
 import ContactCta from "../../shared/components/ContactCta/ContactCta";
-import heroImage from "../../assets/hero.png";
+import heroImage from "../../assets/hero-icare.jpeg";
 import iCareOverviewImage from "../../img/icare-overview.jpeg";
+import iCareProgressImage from "../../assets/icare-progress-home.png";
 
 function Icare() {
   const testimonials = [
@@ -41,7 +42,10 @@ function Icare() {
       <section
         className="icare-hero"
         style={{
-          backgroundImage: `linear-gradient(rgba(44, 29, 18, 0.5), rgba(44, 29, 18, 0.5)), url(${heroImage})`,
+          backgroundImage: `linear-gradient(rgba(88, 88, 88, 0.44), rgba(88, 88, 88, 0.44)), url(${heroImage})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center 28%",
         }}
       >
         <div className="content-container">
@@ -100,8 +104,11 @@ function Icare() {
                   Through guided woodworking projects, participants may work on:
                 </h2>
 
-                <div className="icare-placeholder-image" role="img" aria-label="Placeholder image">
-                  <span>PLACEHOLDER</span>
+                <div className="icare-placeholder-image">
+                  <img
+                    src={iCareProgressImage}
+                    alt="Illustration showing improved confidence, concentration, task focus, and work capacity"
+                  />
                 </div>
               </article>
             </div>
@@ -123,13 +130,6 @@ function Icare() {
               </button>
 
               <div className="icare-testimonial-center">
-                <div className="icare-testimonial-avatar-wrap" aria-hidden="true">
-                  <div className="icare-testimonial-cloud icare-testimonial-cloud-one"></div>
-                  <div className="icare-testimonial-cloud icare-testimonial-cloud-two"></div>
-                  <div className="icare-testimonial-hill icare-testimonial-hill-back"></div>
-                  <div className="icare-testimonial-hill icare-testimonial-hill-front"></div>
-                </div>
-
                 <div className="icare-testimonial-box">
                   <div className="icare-testimonial-copy">
                     {currentTestimonial.paragraphs.map((paragraph) => (

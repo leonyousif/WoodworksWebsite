@@ -1,6 +1,6 @@
 import "./SiteHeader.css";
 import { Link } from "react-router-dom";
-import logo from "../../../img/woodwords logo.jpg";
+import logo from "../../../img/woodworks_transparent.png";
 
 function SiteHeader() {
   return (

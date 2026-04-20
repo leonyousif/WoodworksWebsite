@@ -1,5 +1,5 @@
 import "./TestimonialsSection.css";
-import logo from "../../../../img/woodwords logo.jpg";
+import logo from "../../../../img/woodworks_transparent.png";
 
 function TestimonialsSection() {
   return (

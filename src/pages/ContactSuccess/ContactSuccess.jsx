@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./ContactSuccess.css";
 import SiteHeader from "../../shared/components/SiteHeader/SiteHeader";
-import heroImage from "../../assets/hero.png";
+import heroImage from "../../assets/hero-individualised.jpeg";
 
 function ContactSuccess() {
   return (
@@ -10,7 +10,7 @@ function ContactSuccess() {
 
       <section
         className="contact-success-hero"
-        style={{ backgroundImage: `linear-gradient(rgba(41, 29, 18, 0.34), rgba(41, 29, 18, 0.34)), url(${heroImage})` }}
+        style={{ backgroundImage: `linear-gradient(rgba(88, 88, 88, 0.38), rgba(88, 88, 88, 0.38)), url(${heroImage})` }}
       >
         <div className="contact-success-hero-overlay">
           <div className="content-container">

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import SiteHeader from "../../shared/components/SiteHeader/SiteHeader";
 import ContactCta from "../../shared/components/ContactCta/ContactCta";
-import heroImage from "../../assets/hero.png";
+import heroImage from "../../assets/hero-individualised.jpeg";
 import peterImage from "../../img/individualised-peter.jpeg";
 import paulImage from "../../img/individualised-paul.jpeg";
 import priscillaImage from "../../img/individualised-priscilla.jpg";
@@ -29,12 +29,6 @@ function IndividualisedPrograms() {
       alt: "Priscilla working on a woodworking project",
       quote: "The environment is easy going. I like creating things with wood",
       author: "Priscilla",
-    },
-    {
-      image: null,
-      alt: "Placeholder image",
-      quote: "",
-      author: "Linda",
     },
     {
       image: maxImage,
@@ -77,7 +71,10 @@ function IndividualisedPrograms() {
       <section
         className="individualised-hero"
         style={{
-          backgroundImage: `linear-gradient(rgba(44, 29, 18, 0.48), rgba(44, 29, 18, 0.48)), url(${heroImage})`,
+          backgroundImage: `linear-gradient(rgba(88, 88, 88, 0.43), rgba(88, 88, 88, 0.43)), url(${heroImage})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center 35%",
         }}
       >
         <div className="content-container">

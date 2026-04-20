@@ -4,7 +4,7 @@
 }
 
 .icare-hero {
-  min-height: 250px;
+  min-height: 288px;
   display: flex;
   align-items: center;
   background-position: center;
@@ -136,19 +136,15 @@
 }
 
 .icare-placeholder-image {
-  min-height: 280px;
-  border: 2px dashed rgba(124, 101, 82, 0.45);
-  background: #f6f2ec;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.icare-placeholder-image span {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #b08b6d;
-  letter-spacing: 0.08em;
+.icare-placeholder-image img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .icare-testimonials {
@@ -189,94 +185,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.icare-testimonial-avatar-wrap {
-  position: relative;
-  width: 104px;
-  height: 104px;
-  margin-bottom: 28px;
-  overflow: hidden;
-  border-radius: 50%;
-  border: 3px solid #8a5c36;
-  background: linear-gradient(180deg, #a8d8ff 0%, #d6efff 58%, #f4f7de 58%, #eef3d5 100%);
-}
-
-.icare-testimonial-cloud {
-  position: absolute;
-  background: #ffffff;
-  border-radius: 999px;
-}
-
-.icare-testimonial-cloud::before,
-.icare-testimonial-cloud::after {
-  content: "";
-  position: absolute;
-  background: #ffffff;
-  border-radius: 50%;
-}
-
-.icare-testimonial-cloud-one {
-  width: 28px;
-  height: 13px;
-  top: 18px;
-  left: 25px;
-}
-
-.icare-testimonial-cloud-one::before {
-  width: 13px;
-  height: 13px;
-  left: 3px;
-  top: -6px;
-}
-
-.icare-testimonial-cloud-one::after {
-  width: 15px;
-  height: 15px;
-  right: 2px;
-  top: -7px;
-}
-
-.icare-testimonial-cloud-two {
-  width: 20px;
-  height: 10px;
-  top: 25px;
-  left: 48px;
-}
-
-.icare-testimonial-cloud-two::before {
-  width: 10px;
-  height: 10px;
-  left: 2px;
-  top: -4px;
-}
-
-.icare-testimonial-cloud-two::after {
-  width: 11px;
-  height: 11px;
-  right: 0;
-  top: -5px;
-}
-
-.icare-testimonial-hill {
-  position: absolute;
-  border-radius: 50%;
-}
-
-.icare-testimonial-hill-back {
-  width: 96px;
-  height: 40px;
-  left: 8px;
-  bottom: 12px;
-  background: #c3db6a;
-}
-
-.icare-testimonial-hill-front {
-  width: 104px;
-  height: 42px;
-  left: -8px;
-  bottom: -9px;
-  background: #85a900;
 }
 
 .icare-testimonial-box {
@@ -483,7 +391,7 @@
 
 @media (max-width: 768px) {
   .icare-hero {
-    min-height: 210px;
+    min-height: 242px;
   }
 
   .icare-overview {

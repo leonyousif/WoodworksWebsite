@@ -1,12 +1,12 @@
 import "./HeroBanner.css";
-import logo from "../../../../img/woodwords logo.jpg";
-import heroImage from "../../../../assets/hero.png";
+import logo from "../../../../img/woodworks_transparent.png";
+import heroImage from "../../../../assets/hero-ndis.jpeg";
 
 function HeroBanner() {
   return (
     <section
       className="hero-banner"
-      style={{ backgroundImage: `url(${heroImage})` }}
+      style={{ backgroundImage: `linear-gradient(rgba(88, 88, 88, 0.34), rgba(88, 88, 88, 0.34)), url(${heroImage})` }}
     >
       <div className="hero-overlay"></div>
 

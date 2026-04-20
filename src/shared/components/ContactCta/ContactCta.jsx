@@ -1,6 +1,6 @@
 import "./ContactCta.css";
 import { Link } from "react-router-dom";
-import logo from "../../../img/woodwords logo.jpg";
+import logo from "../../../img/woodworks_transparent.png";
 import brainInjuryMattersLogo from "../../../img/brain-injury-matters.png";
 import instagramLogo from "../../../img/instagram.png";
 import facebookLogo from "../../../img/facebook.png";

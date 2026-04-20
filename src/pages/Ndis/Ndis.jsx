@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 
 import SiteHeader from "../../shared/components/SiteHeader/SiteHeader";
 import ContactCta from "../../shared/components/ContactCta/ContactCta";
-import heroImage from "../../assets/hero.png";
+import heroImage from "../../assets/hero-ndis.jpeg";
+import supportIconImage from "../../assets/ndis-support-icon.png";
+import dadWorkshopImage from "../../img/dad.jpg";
 
 function Ndis() {
   const supports = [
@@ -52,7 +54,10 @@ function Ndis() {
       <section
         className="ndis-hero"
         style={{
-          backgroundImage: `linear-gradient(rgba(44, 29, 18, 0.42), rgba(44, 29, 18, 0.42)), url(${heroImage})`,
+          backgroundImage: `linear-gradient(rgba(88, 88, 88, 0.4), rgba(88, 88, 88, 0.4)), url(${heroImage})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center 42%",
         }}
       >
         <div className="content-container">
@@ -82,8 +87,11 @@ function Ndis() {
             </div>
 
             <div className="ndis-overview-image">
-              <div className="ndis-image-placeholder" role="img" aria-label="Placeholder image">
-                <span>PLACEHOLDER</span>
+              <div className="ndis-image-placeholder">
+                <img
+                  src={dadWorkshopImage}
+                  alt="Close-up of a participant shaping timber on a wood lathe in the workshop"
+                />
               </div>
             </div>
           </div>
@@ -95,7 +103,7 @@ function Ndis() {
               {supports.map((item) => (
                 <article className="ndis-support-item" key={item}>
                   <div className="ndis-support-icon" aria-hidden="true">
-                    <span>PLACEHOLDER</span>
+                    <img src={supportIconImage} alt="" />
                   </div>
 
                   <p>{item}</p>
@@ -120,13 +128,6 @@ function Ndis() {
               </button>
 
               <div className="ndis-testimonial-center">
-                <div className="ndis-testimonial-avatar-wrap" aria-hidden="true">
-                  <div className="ndis-testimonial-cloud ndis-testimonial-cloud-one"></div>
-                  <div className="ndis-testimonial-cloud ndis-testimonial-cloud-two"></div>
-                  <div className="ndis-testimonial-hill ndis-testimonial-hill-back"></div>
-                  <div className="ndis-testimonial-hill ndis-testimonial-hill-front"></div>
-                </div>
-
                 <div className="ndis-testimonial-box">
                   <div className="ndis-testimonial-copy">
                     <p>&ldquo;{currentTestimonial.quote}&rdquo;</p>

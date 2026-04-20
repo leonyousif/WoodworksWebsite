@@ -1,18 +1,12 @@
 import "./AfterSchool.css";
 import SiteHeader from "../../shared/components/SiteHeader/SiteHeader";
 import ContactCta from "../../shared/components/ContactCta/ContactCta";
-import heroImage from "../../assets/hero.png";
+import heroImage from "../../assets/hero-afterschool.jpeg";
+import afterSchoolSupportsImage from "../../assets/afterschool-supports-grid.png";
+import afterSchoolKevinImage from "../../assets/afterschool-kevin.jpeg";
+import afterSchoolDrillImage from "../../assets/afterschool-drill.jpg";
 
 function AfterSchool() {
-  const supports = [
-    "Development of practical woodworking skills",
-    "Learning to follow structured processes and safety procedures",
-    "Building confidence and independence",
-    "Developing workplace-style routines and responsibilities",
-    "Strengthening focus and problem-solving skills",
-    "Building readiness for TAFE, training pathways, or employment",
-  ];
-
   return (
     <div className="afterschool-page">
       <SiteHeader />
@@ -20,7 +14,10 @@ function AfterSchool() {
       <section
         className="afterschool-hero"
         style={{
-          backgroundImage: `linear-gradient(rgba(44, 29, 18, 0.5), rgba(44, 29, 18, 0.5)), url(${heroImage})`,
+          backgroundImage: `linear-gradient(rgba(88, 88, 88, 0.42), rgba(88, 88, 88, 0.42)), url(${heroImage})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center 38%",
         }}
       >
         <div className="content-container">
@@ -32,7 +29,10 @@ function AfterSchool() {
         <section className="afterschool-overview">
           <div className="content-container afterschool-overview-grid">
             <div className="afterschool-placeholder-card">
-              <span>PLACEHOLDER</span>
+              <img
+                src={afterSchoolKevinImage}
+                alt="Student using sanding equipment in the Woodworks workshop"
+              />
             </div>
 
             <div className="afterschool-intro-copy">
@@ -60,15 +60,23 @@ function AfterSchool() {
             </div>
 
             <div className="afterschool-placeholder-card afterschool-placeholder-offset">
-              <span>PLACEHOLDER</span>
+              <img
+                src={afterSchoolDrillImage}
+                alt="Student drilling a woodworking project in the workshop"
+              />
             </div>
           </div>
         </section>
 
         <section className="afterschool-supports">
           <div className="content-container">
+            <h2>Our after school program may support:</h2>
+
             <div className="afterschool-supports-placeholder">
-              <span>PLACEHOLDER</span>
+              <img
+                src={afterSchoolSupportsImage}
+                alt="Overview of after school program support areas including practical skills, safety procedures, independence, routines, focus, and training readiness"
+              />
             </div>
           </div>
         </section>
@@ -87,10 +95,6 @@ function AfterSchool() {
                 while gaining experience that can support their future training
                 and employment goals.
               </p>
-            </div>
-
-            <div className="afterschool-wide-placeholder">
-              <span>PLACEHOLDER</span>
             </div>
           </div>
         </section>
