@@ -9,7 +9,7 @@ import autismSpectrumAustraliaLogo from "../../../img/autism-spectrum-australia.
 
 function ContactCta({ smallHeading = "THE WORKSHOP IS WAITING..." }) {
   const mapQuery = encodeURIComponent(
-    "9 Glenroy Crescent, St Johns Park, 2176, NSW"
+    "6/272-274 Victoria St, Wetherill Park, NSW"
   );
 
   return (
@@ -42,7 +42,7 @@ function ContactCta({ smallHeading = "THE WORKSHOP IS WAITING..." }) {
 
             <div className="contact-block">
               <h3>Our Location</h3>
-              <p>9 Glenroy Crescent, St Johns Park, 2176, NSW</p>
+              <p>6/272-274 Victoria St, Wetherill Park, NSW</p>
             </div>
           </div>
 

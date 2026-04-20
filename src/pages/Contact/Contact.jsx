@@ -61,7 +61,7 @@ function Contact() {
                 <div className="contact-card-icon" aria-hidden="true">MAP</div>
                 <div className="contact-card-copy">
                   <h3>Find Us</h3>
-                  <p>9 Glenroy Crescent, St Johns Park, NSW</p>
+                  <p>6/272-274 Victoria St, Wetherill Park, NSW</p>
                 </div>
               </div>
             </div>
@@ -73,7 +73,7 @@ function Contact() {
               <h3>Workshop Hours:</h3>
 
               <ul>
-                <li>Monday: 9am - 3pm</li>
+                <li>Monday: Closed</li>
                 <li>Tuesday: 9am - 6pm</li>
                 <li>Wednesday: 9am - 3pm</li>
                 <li>Thursday: 9am - 6pm</li>
