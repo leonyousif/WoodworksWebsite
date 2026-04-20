@@ -45,7 +45,7 @@ function IndividualisedPrograms() {
   });
 
   const sessionTimes = [
-    "Monday: 9am - 3pm",
+    "Monday: Closed",
     "Tuesday: 9am - 6pm",
     "Wednesday: 9am - 3pm",
     "Thursday: 9am - 6pm",
